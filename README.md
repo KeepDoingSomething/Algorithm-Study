@@ -75,7 +75,7 @@ Algoritm  : Binary Search
 
 4. 코드 리뷰가 끝난 PR 방장이 Merge 진행
 
-> PR Example
+> [PR Example](https://github.com/KeepDoingSomething/KeepAlgorithm/pull/2)
 
 </br>
 
