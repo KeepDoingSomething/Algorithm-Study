@@ -44,11 +44,14 @@
 
 [ Python ]
 ```python
-# Author    : Lee In Bok
-# Date      : 2024.01.01(Mon)
-# Runtime   : 42352 KB
-# Memory    : 816 ms
-# Algoritm  : Binary Search
+'''
+Author    : Lee In Bok
+Date      : 2024.01.01(Mon)
+Runtime   : 42352 KB
+Memory    : 816 ms
+Algoritm  : Binary Search
+'''
+
 ```
 
 </br>
@@ -72,11 +75,28 @@
 
 4. 코드 리뷰가 끝난 PR 방장이 Merge 진행
 
+> PR Example
+
+</br>
+
+# **[ :octocat: 커밋 ]**
+
+```
+Feat: 새로운 문제 풀이 추가
+Refactor: 코드 리뷰로 인한 재풀이
+Fix: 풀이 수정
+Comment: 주석 추가
+Rename: 파일, 폴더명 수정
+Remove: 파일, 폴더 삭제
+```
+
+</br>
+
 # **[ ❓ ]**
 
 - 문제 선정 방식: 본인 선택
 - 분량:
-  - 풀이: 1 문제
+  - 풀이: 1 문제 (1문제 이상의 경우 리뷰어랑 합의)
   - 리뷰: 1 문제
 - 리뷰어 선택 기준: 미정
 - 기간:
