@@ -38,7 +38,7 @@
 * Date      : 2024.01.01(Mon)
 * Runtime   : 58612 KB
 * Memory    : 712 ms
-* Algoritm  : Binary Search
+* Algorithm : Binary Search
  */
 ```
 
@@ -49,7 +49,7 @@ Author    : Lee In Bok
 Date      : 2024.01.01(Mon)
 Runtime   : 42352 KB
 Memory    : 816 ms
-Algoritm  : Binary Search
+Algorithm : Binary Search
 '''
 
 ```
@@ -95,10 +95,17 @@ Remove: 파일, 폴더 삭제
 # **[ ❓ ]**
 
 - 문제 선정 방식: 본인 선택
-- 분량:
-  - 풀이: 1 문제 (1문제 이상의 경우 리뷰어랑 합의)
-  - 리뷰: 1 문제
 - 리뷰어 선택 기준: 미정
+- 분량:
+  - 풀이: 최소 1 문제 (1문제 이상의 경우 리뷰어랑 합의)
+  - 리뷰: 최소 1 문제 (배정된 문제가 아니여도 리뷰 자유)
 - 기간:
   - 풀이: 월 ~ 목(4일) -> 못 푼 경우 시도한 방법, 혹은 작성한 코드까지
   - 리뷰: 금 ~ 일(3일)
+
+</br>
+
+### 👉 의견 환영
+
+- ex1) 한 달에 한 번 오프라인
+- ex2) 보증금 규칙 추가
