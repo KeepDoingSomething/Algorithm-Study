@@ -38,7 +38,7 @@
 * Date      : 2024.01.01(Mon)
 * Runtime   : 58612 KB
 * Memory    : 712 ms
-* Algoritm  : Binary Search
+* Algorithm : Binary Search
  */
 ```
 
@@ -49,7 +49,7 @@ Author    : Lee In Bok
 Date      : 2024.01.01(Mon)
 Runtime   : 42352 KB
 Memory    : 816 ms
-Algoritm  : Binary Search
+Algorithm : Binary Search
 '''
 
 ```
