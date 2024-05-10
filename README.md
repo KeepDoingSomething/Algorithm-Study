@@ -117,3 +117,12 @@ Remove: 파일, 폴더 삭제
 - ex1) 한 달에 한 번 오프라인
 - ex2) 보증금 규칙 추가
 - ex3) 화면 공유 라이브 코딩 테스트
+
+</br>
+
+
+# **[ ⛬ 히스토리 ]**
+
+|날짜|문제|
+|---|:---:|
+|05.13 - 05.19|[#Week00](https://github.com/KeepDoingSomething/Algorithm-Study/issues/8)|
