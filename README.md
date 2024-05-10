@@ -6,7 +6,15 @@
 # **[ 👨‍👨‍👧‍👦 ‍멤버 ]**
 |이름|Github|언어|
 |---|:---:|:---:|
-|이인복|[<img src="https://avatars.githubusercontent.com/nashs789" width="50px;">](https://github.com/nashs789)|<span><img src="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span> <span><img src="https://img.shields.io/badge/Python-3776AB.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span>|
+|이인복|[<img src="https://avatars.githubusercontent.com/nashs789" width="50px;">](https://github.com/nashs789)|<span><img src="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span> <span><img src="https://img.shields.io/badge/Python-3776AB.svg?&style=for-the-badge&logo=Python&logoColor=white"/></span>|
+|최지호|[<img src="https://avatars.githubusercontent.com/wlghsp" width="50px;">](https://github.com/wlghsp)|<span><img src="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span> <span><img src="https://img.shields.io/badge/Python-3776AB.svg?&style=for-the-badge&logo=Python&logoColor=white"/></span>|
+|재환|[<img src="https://avatars.githubusercontent.com/Podola" width="50px;">](https://github.com/Podola)|<span><img src="https://img.shields.io/badge/Python-3776AB.svg?&style=for-the-badge&logo=Python&logoColor=white"/></span>|
+|우진|[<img src="https://avatars.githubusercontent.com/dnwls16071" width="50px;">](https://github.com/dnwls16071)|<span><img src="https://img.shields.io/badge/Python-3776AB.svg?&style=for-the-badge&logo=Python&logoColor=white"/></span>|
+|김대현|[<img src="https://avatars.githubusercontent.com/dnwls16071" width="50px;">](https://github.com/dnwls16071)|<span><img src="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span>|
+|윤건수|[<img src="https://avatars.githubusercontent.com/ygs3004" width="50px;">](https://github.com/ygs3004)|<span><img src="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span>|
+|허준범|[<img src="https://avatars.githubusercontent.com/mommos1" width="50px;">](https://github.com/mommos1)|<span><img src="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span>|
+|이영동|[<img src="https://avatars.githubusercontent.com/leeyoungdong" width="50px;">](https://github.com/leeyoungdong)|추후 추가|
+
 
 </br>
 
@@ -38,7 +46,7 @@
 * Date      : 2024.01.01(Mon)
 * Runtime   : 58612 KB
 * Memory    : 712 ms
-* Algoritm  : Binary Search
+* Algorithm : Binary Search
  */
 ```
 
@@ -49,7 +57,7 @@ Author    : Lee In Bok
 Date      : 2024.01.01(Mon)
 Runtime   : 42352 KB
 Memory    : 816 ms
-Algoritm  : Binary Search
+Algorithm : Binary Search
 '''
 
 ```
@@ -58,9 +66,10 @@ Algoritm  : Binary Search
 
 # **[ 🚫 규칙 ]**
 
-1. 스터디 Repository 를 Fork 합니다.
+1 - 1. 스터디 Repository 를 Fork 합니다.
+1 - 2. 스터디 Repository 를 Clone 합니다.
 
-2. 개인 Repository 에서 문제를 풀이 후 Push
+2. Repository 에서 문제를 풀이 후 Push
 
 3. 스터디 Repository 로 PR 요청
    - Reviewers 설정(코드 리뷰)
@@ -75,7 +84,8 @@ Algoritm  : Binary Search
 
 4. 코드 리뷰가 끝난 PR 방장이 Merge 진행
 
-> PR Example
+
+> [PR Example](https://github.com/KeepDoingSomething/KeepAlgorithm/pull/2)
 
 </br>
 
@@ -94,11 +104,25 @@ Remove: 파일, 폴더 삭제
 
 # **[ ❓ ]**
 
-- 문제 선정 방식: 본인 선택
-- 분량:
-  - 풀이: 1 문제 (1문제 이상의 경우 리뷰어랑 합의)
-  - 리뷰: 1 문제
+- 문제 선정 방식: 미정
 - 리뷰어 선택 기준: 미정
-- 기간:
-  - 풀이: 월 ~ 목(4일) -> 못 푼 경우 시도한 방법, 혹은 작성한 코드까지
-  - 리뷰: 금 ~ 일(3일)
+- 분량:
+  - 풀이: 최소 1 문제 (1문제 이상의 경우 리뷰어랑 합의)
+  - 리뷰: 최소 1 문제 (배정된 문제가 아니여도 리뷰 자유)
+
+</br>
+
+### 👉 의견 환영
+
+- ex1) 한 달에 한 번 오프라인
+- ex2) 보증금 규칙 추가
+- ex3) 화면 공유 라이브 코딩 테스트
+
+</br>
+
+
+# **[ ⛬ 히스토리 ]**
+
+|날짜|문제|
+|---|:---:|
+|05.13 - 05.19|[#Week00](https://github.com/KeepDoingSomething/Algorithm-Study/issues/8)|
