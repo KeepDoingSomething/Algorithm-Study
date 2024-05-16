@@ -22,7 +22,7 @@ class Q1158 {
         StringBuilder sb = new StringBuilder().append("<");
         int N = Integer.parseInt(st.nextToken());
         int K = Integer.parseInt(st.nextToken());
-        Queue<Integer> queue = new LinkedList(IntStream.range(1, N + 1).boxed().collect(Collectors.toList()));
+        Queue<Integer> queue = new LinkedList(IntStream.rangeClosed(1, N).boxed().collect(Collectors.toList()));
 
         while(!queue.isEmpty()) {
             for(int i = 1; i < K; i++){

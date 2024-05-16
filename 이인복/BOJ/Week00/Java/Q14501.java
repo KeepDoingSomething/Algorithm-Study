@@ -44,12 +44,7 @@ public class Q14501 {
 
         int nextDay = day + days[day];
 
-        if(nextDay <= N) {
-            dfs(nextDay, cost + costs[day]);  // 상담
-        } else {
-            dfs(nextDay, cost);  // 상담 불가능
-        }
-
+        dfs(nextDay, cost + (nextDay <= N ? costs[day] : 0));  // 상담 가능 : 상담 불가능
         dfs(day + 1, cost);  // 상담 패스
     }
 }
