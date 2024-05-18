@@ -125,4 +125,4 @@ Remove: 파일, 폴더 삭제
 
 |날짜|문제|
 |---|:---:|
-|05.13 - 05.19|[#Week00](https://github.com/KeepDoingSomething/Algorithm-Study/issues/8)|
+|05.13 - 05.19|[#com.Week00](https://github.com/KeepDoingSomething/Algorithm-Study/issues/8)|

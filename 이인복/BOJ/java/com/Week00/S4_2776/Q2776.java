@@ -6,15 +6,20 @@
  * Algorithm : Hash
  */
 
+package com.Week00.S4_2776;
+
+import com.Solution;
+
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-public class Q2776 {
-    public static void main(String[] args) throws IOException {
+public class Q2776 implements Solution {
+
+    @Override
+    public void solution() throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringBuilder sb = new StringBuilder();
         int T = Integer.parseInt(br.readLine());
@@ -32,6 +37,6 @@ public class Q2776 {
                   .forEach(e -> sb.append(note1.contains(e) ? 1 : 0).append('\n'));
         }
 
-        System.out.println(sb.toString());
+        System.out.print(sb.toString());
     }
 }

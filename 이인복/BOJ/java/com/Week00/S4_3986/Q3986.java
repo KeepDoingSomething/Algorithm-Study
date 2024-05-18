@@ -6,13 +6,18 @@
  * Algorithm : Stack
  */
 
+package com.Week00.S4_3986;
+
+import com.Solution;
+
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Stack;
 
-public class Q3986 {
-    public static void main(String[] args) throws IOException {
+public class Q3986 implements Solution {
+
+    @Override
+    public void solution() throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int N = Integer.parseInt(br.readLine());
         int ans = 0;
@@ -33,6 +38,6 @@ public class Q3986 {
 
             ans += stack.isEmpty() ? 1 : 0;
         }
-        System.out.println(ans);
+        System.out.print(ans);
     }
 }

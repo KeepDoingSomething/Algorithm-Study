@@ -6,24 +6,29 @@
  * Algorithm : Brute Force
  */
 
+package com.Week00.S3_14501;
+
+import com.Solution;
+
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Q14501 {
+public class Q14501 implements Solution {
 
     public static int N;
     public static int[] days;
     public static int[] costs;
-    public static int ans = 0;
+    public static int ans;
 
-    public static void main(String[] args) throws IOException {
+    @Override
+    public void solution() throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st;
         N = Integer.parseInt(br.readLine());
         days = new int[N];
         costs = new int[N];
+        ans = 0;
 
         for(int i = 0; i < N; i++) {
             st = new StringTokenizer(br.readLine());
@@ -44,7 +49,7 @@ public class Q14501 {
 
         int nextDay = day + days[day];
 
-        dfs(nextDay, cost + (nextDay <= N ? costs[day] : 0));  // 상담 가능 : 상담 불가능
+        dfs(nextDay, cost + (nextDay <= N ? costs[day] : 0));
         dfs(day + 1, cost);  // 상담 패스
     }
 }
