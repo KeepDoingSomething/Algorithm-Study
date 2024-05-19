@@ -8,12 +8,9 @@
 |---|:---:|:---:|
 |이인복|[<img src="https://avatars.githubusercontent.com/nashs789" width="50px;">](https://github.com/nashs789)|<span><img src="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span> <span><img src="https://img.shields.io/badge/Python-3776AB.svg?&style=for-the-badge&logo=Python&logoColor=white"/></span>|
 |최지호|[<img src="https://avatars.githubusercontent.com/wlghsp" width="50px;">](https://github.com/wlghsp)|<span><img src="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span> <span><img src="https://img.shields.io/badge/Python-3776AB.svg?&style=for-the-badge&logo=Python&logoColor=white"/></span>|
-|재환|[<img src="https://avatars.githubusercontent.com/Podola" width="50px;">](https://github.com/Podola)|<span><img src="https://img.shields.io/badge/Python-3776AB.svg?&style=for-the-badge&logo=Python&logoColor=white"/></span>|
-|우진|[<img src="https://avatars.githubusercontent.com/dnwls16071" width="50px;">](https://github.com/dnwls16071)|<span><img src="https://img.shields.io/badge/Python-3776AB.svg?&style=for-the-badge&logo=Python&logoColor=white"/></span>|
-|김대현|[<img src="https://avatars.githubusercontent.com/dnwls16071" width="50px;">](https://github.com/dnwls16071)|<span><img src="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span>|
+|김재환|[<img src="https://avatars.githubusercontent.com/Podola" width="50px;">](https://github.com/Podola)|<span><img src="https://img.shields.io/badge/Python-3776AB.svg?&style=for-the-badge&logo=Python&logoColor=white"/></span>|
 |윤건수|[<img src="https://avatars.githubusercontent.com/ygs3004" width="50px;">](https://github.com/ygs3004)|<span><img src="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span>|
 |허준범|[<img src="https://avatars.githubusercontent.com/mommos1" width="50px;">](https://github.com/mommos1)|<span><img src="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span>|
-|이영동|[<img src="https://avatars.githubusercontent.com/leeyoungdong" width="50px;">](https://github.com/leeyoungdong)|추후 추가|
 
 
 </br>
