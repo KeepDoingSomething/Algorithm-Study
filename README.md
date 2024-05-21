@@ -12,8 +12,7 @@
 |윤건수|[<img src="https://avatars.githubusercontent.com/ygs3004" width="50px;">](https://github.com/ygs3004)|<span><img src="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span>|
 |허준범|[<img src="https://avatars.githubusercontent.com/mommos1" width="50px;">](https://github.com/mommos1)|<span><img src="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span>|
 |최승연|[<img src="https://avatars.githubusercontent.com/sseung416" width="50px;">](https://github.com/sseung416)|<span><img src="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span>|
-
-https://github.com/sseung416
+|전유진|[<img src="https://avatars.githubusercontent.com/jacomyou1026" width="50px;">](https://github.com/jacomyou1026)|<span><img src="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span>|
 
 </br>
 
@@ -125,5 +124,5 @@ Remove: 파일, 폴더 삭제
 
 |날짜|문제|
 |---|:---:|
-|05.13 - 05.19|[Week00](https://github.com/KeepDoingSomething/Algorithm-Study/issues/8)|
-|05.20 - 05.26|[Week01](https://github.com/KeepDoingSomething/Algorithm-Study/issues/13)|
+|05.13 - 05.19|[Week01](https://github.com/KeepDoingSomething/Algorithm-Study/issues/8)|
+|05.20 - 05.26|[Week02](https://github.com/KeepDoingSomething/Algorithm-Study/issues/13)|
