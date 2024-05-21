@@ -1,4 +1,8 @@
-import java.io.*;
+import java.awt.*;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
 import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -13,6 +17,7 @@ public interface Problem<P, R>{
     R solve(P parameter) throws Exception;
 
     default void test() {
+
         try {
             // Result 저장
             Map<String, R> resultCase = getResultCase();
@@ -22,7 +27,7 @@ public interface Problem<P, R>{
             for (String caseKey : inputCase.keySet()) {
                 P input = inputCase.get(caseKey);
 
-                System.out.print("테스트 실행 Case: ");
+                System.out.println("테스트 실행 Input");
                 println(input);
 
                 long startTime = System.nanoTime();
@@ -33,7 +38,8 @@ public interface Problem<P, R>{
                 System.out.println();
 
                 R expectResult = resultCase.get(caseKey);
-                isSuccess = isSuccess && expectResult.equals(testResult);
+                boolean isCaseSuccess = expectResult.equals(testResult);
+                isSuccess = isSuccess && isCaseSuccess;
 
                 println("정답");
                 println(expectResult);
@@ -42,14 +48,24 @@ public interface Problem<P, R>{
                 println("결과");
                 println(testResult);
                 System.out.println();
+
+                if(isCaseSuccess){
+                    passPrintln("Case 통과");
+                }else{
+                    failPrintln("Case 실패");
+                }
+
+                System.out.println();
                 println("=======================================================================================");
             }
 
             if(isSuccess){
-                println("모든 테스트가 통과하였습니다.");
+                passPrintln("모든 테스트가 통과하였습니다.");
                 System.out.println();
             }else{
-                println("************** 실패한 테스트가 있습니다. 결과를 확인해주세요 **************");
+                failPrintln("************** 실패한 테스트가 있습니다. 결과를 확인해주세요 **************");
+                // 실패시 소리
+                Toolkit.getDefaultToolkit().beep();
                 System.out.println();
             }
 
@@ -57,6 +73,20 @@ public interface Problem<P, R>{
             e.printStackTrace();
         }
     };
+
+    private void passPrintln(String str){
+        // console 색상
+        String reset = "\u001B[0m";
+        String green = "\u001B[32m";
+        println(green + str + reset);
+    }
+
+    private void failPrintln(String str){
+        // console 색상
+        String red = "\u001B[31m";
+        String reset = "\u001B[0m";
+        println(red + str + reset);
+    }
 
     default void println(Object input){
         if(input instanceof File) {

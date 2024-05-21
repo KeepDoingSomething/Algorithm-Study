@@ -1,7 +1,5 @@
 import java.lang.reflect.Constructor;
-import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
-import java.net.URL;
 import java.util.HashMap;
 
 public class Programmers<R> implements Problem<Object[], R>{
