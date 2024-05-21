@@ -1,10 +1,6 @@
 package com;
 
-import com.Week00.S3_14501.Q14501;
-import com.Week00.S4_1158.Q1158;
-import com.Week00.S4_2776.Q2776;
-import com.Week00.S4_3986.Q3986;
-import com.Week01.S4_1244.Q1244;
+import com.Week01.S3_1913.Q1913;
 
 import java.io.*;
 import java.nio.file.Files;
@@ -32,7 +28,7 @@ public class RunProblem {
     }
 
     public static void main(String[] args) throws Exception {
-        Solution sol = new Q1244();
+        Solution sol = new Q1913();
 
         List<File> inputFiles = Arrays.stream(new File(sol.getClass().getResource(INPUT_DIR).toURI()).listFiles())
                                       .sorted(fileNameNaturalOrder(File::getName))
@@ -41,6 +37,7 @@ public class RunProblem {
                                        .sorted(fileNameNaturalOrder(File::getName))
                                        .collect(Collectors.toList());
         List<Integer> failedList = new ArrayList<>();
+        // 특정 문제만 풀고 싶을 때, 문제 번호 입력
         Set<Integer> fixedNumbers = new HashSet<>(List.of());
 
         for(int i = 0; i < inputFiles.size(); i++) {
