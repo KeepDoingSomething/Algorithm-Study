@@ -1,3 +1,11 @@
+/**
+ * Author    : Heo jun boem
+ * Date      : 2024.05.21(Wen)
+ * Runtime   : 14228 KB
+ * Memory    : 128 ms
+ * Algorithm : Implementation
+ */
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
