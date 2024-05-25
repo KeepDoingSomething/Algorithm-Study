@@ -8,13 +8,11 @@
 |---|:---:|:---:|
 |이인복|[<img src="https://avatars.githubusercontent.com/nashs789" width="50px;">](https://github.com/nashs789)|<span><img src="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span> <span><img src="https://img.shields.io/badge/Python-3776AB.svg?&style=for-the-badge&logo=Python&logoColor=white"/></span>|
 |최지호|[<img src="https://avatars.githubusercontent.com/wlghsp" width="50px;">](https://github.com/wlghsp)|<span><img src="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span> <span><img src="https://img.shields.io/badge/Python-3776AB.svg?&style=for-the-badge&logo=Python&logoColor=white"/></span>|
-|재환|[<img src="https://avatars.githubusercontent.com/Podola" width="50px;">](https://github.com/Podola)|<span><img src="https://img.shields.io/badge/Python-3776AB.svg?&style=for-the-badge&logo=Python&logoColor=white"/></span>|
-|우진|[<img src="https://avatars.githubusercontent.com/dnwls16071" width="50px;">](https://github.com/dnwls16071)|<span><img src="https://img.shields.io/badge/Python-3776AB.svg?&style=for-the-badge&logo=Python&logoColor=white"/></span>|
-|김대현|[<img src="https://avatars.githubusercontent.com/dnwls16071" width="50px;">](https://github.com/dnwls16071)|<span><img src="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span>|
+|김재환|[<img src="https://avatars.githubusercontent.com/Podola" width="50px;">](https://github.com/Podola)|<span><img src="https://img.shields.io/badge/Python-3776AB.svg?&style=for-the-badge&logo=Python&logoColor=white"/></span>|
 |윤건수|[<img src="https://avatars.githubusercontent.com/ygs3004" width="50px;">](https://github.com/ygs3004)|<span><img src="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span>|
 |허준범|[<img src="https://avatars.githubusercontent.com/mommos1" width="50px;">](https://github.com/mommos1)|<span><img src="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span>|
-|이영동|[<img src="https://avatars.githubusercontent.com/leeyoungdong" width="50px;">](https://github.com/leeyoungdong)|추후 추가|
-
+|최승연|[<img src="https://avatars.githubusercontent.com/sseung416" width="50px;">](https://github.com/sseung416)|<span><img src="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span>|
+|전유진|[<img src="https://avatars.githubusercontent.com/jacomyou1026" width="50px;">](https://github.com/jacomyou1026)|<span><img src="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span>|
 
 </br>
 
@@ -104,6 +102,7 @@ Remove: 파일, 폴더 삭제
 
 # **[ ❓ ]**
 
+- 모임: 10:00(일) 디스코드
 - 문제 선정 방식: 미정
 - 리뷰어 선택 기준: 미정
 - 분량:
@@ -125,4 +124,5 @@ Remove: 파일, 폴더 삭제
 
 |날짜|문제|
 |---|:---:|
-|05.13 - 05.19|[#Week00](https://github.com/KeepDoingSomething/Algorithm-Study/issues/8)|
+|05.13 - 05.19|[Week01](https://github.com/KeepDoingSomething/Algorithm-Study/issues/8)|
+|05.20 - 05.26|[Week02](https://github.com/KeepDoingSomething/Algorithm-Study/issues/13)|
