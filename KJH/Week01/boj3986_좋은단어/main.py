@@ -6,6 +6,7 @@ Memory    : 31552 KB
 Algorithm : Stack
 '''
 
+# 괄호유효성 문제와 똑같다.
 ans = 0
 for _ in range(int(input())):
     text = input()  # AABB
