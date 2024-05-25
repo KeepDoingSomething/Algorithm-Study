@@ -1,3 +1,8 @@
+'''
+Author    : Kim Jae Hwan
+Date      : 2024.05.24(Fri)
+'''
+
 # 시작점과의 거리 비교
 def Distance(x, y):
     return max(abs(startX - x), abs(startY - y))

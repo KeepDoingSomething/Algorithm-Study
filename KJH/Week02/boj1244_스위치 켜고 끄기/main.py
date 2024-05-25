@@ -1,3 +1,8 @@
+'''
+Author    : Kim Jae Hwan
+Date      : 2024.05.24(Fri)
+'''
+
 # 입력
 N = int(input())
 switches = list(map(int , input().split(" ")))

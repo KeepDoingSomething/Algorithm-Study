@@ -1,3 +1,8 @@
+'''
+Author    : Kim Jae Hwan
+Date      : 2024.05.25(Sun)
+'''
+
 def solution(n):
     x=n-1
     answer=''
