@@ -74,9 +74,9 @@ Algorithm : Binary Search
    - Assignees 본인으로 설정
    - Labels 플랫폼, 난이도, 언어 3개 이상 설정
      - 플랫폼
-       - ex) BOJ(백준)
+       - ex) BOJ(baekjoon)
      - 난이도
-       - ex) Gold 백준 골드
+       - ex) Gold baekjoon 골드
      - 언어
        - ex) Java
 

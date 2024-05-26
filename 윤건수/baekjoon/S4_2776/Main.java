@@ -1,18 +1,17 @@
 // https://www.acmicpc.net/problem/2776
-package 백준.S4_2776;
+package baekjoon.S4_2776;
 
 import java.io.BufferedReader;
-import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.StringTokenizer;
 
-public class S4_2776 {
+public class Main {
 
-    public String solution(InputStream systemIn) throws Exception{
+    public static void main(String[] args) throws Exception {
 
-        BufferedReader br = new BufferedReader(new InputStreamReader(systemIn));
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringBuilder result = new StringBuilder();
 
         int testCase = Integer.parseInt(br.readLine());
@@ -40,7 +39,6 @@ public class S4_2776 {
         }
 
         System.out.println(result.toString().trim());
-        return result.toString().trim();
     }
 
 }
