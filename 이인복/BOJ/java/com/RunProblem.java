@@ -1,6 +1,6 @@
 package com;
 
-import com.Week01.S3_1913.Q1913;
+import com.self.S1_2468.Q2468;
 
 import java.io.*;
 import java.nio.file.Files;
@@ -28,7 +28,7 @@ public class RunProblem {
     }
 
     public static void main(String[] args) throws Exception {
-        Solution sol = new Q1913();
+        Solution sol = new Q2468();
 
         List<File> inputFiles = Arrays.stream(new File(sol.getClass().getResource(INPUT_DIR).toURI()).listFiles())
                                       .sorted(fileNameNaturalOrder(File::getName))
@@ -52,6 +52,7 @@ public class RunProblem {
             sb.append("========== [Test Case(" + (fileNumber) + ") Result] ==========\n")
               .append("Input File : " + inFile.getName() + "\n")
               .append("Output File: " + outFile.getName() + "\n");
+
             if(!run(sol, inFile.getPath(), outFile.getPath())) {
                 failedList.add(fileNumber);
             }
