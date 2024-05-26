@@ -1,17 +1,16 @@
-package 백준.S3_14501;
+package baekjoon.S3_14501;
 
 import java.io.BufferedReader;
-import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 // 퇴사 (Silver 3)
 // https://www.acmicpc.net/problem/14501
-public class S3_14501 {
+public class Main {
 
-    public String solution(InputStream systemIn) throws Exception {
+    public static void main(String[] args) throws Exception {
 
-        BufferedReader br = new BufferedReader(new InputStreamReader(systemIn));
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st;
         int day = Integer.parseInt(br.readLine());
         int[] bestIncome = new int[day + 2]; // 오늘부터 퇴사일까지 벌 수 있는 최대 수입
@@ -32,7 +31,6 @@ public class S3_14501 {
         }
 
         System.out.println(bestIncome[1]);
-        return String.valueOf(bestIncome[1]);
     }
 
 }

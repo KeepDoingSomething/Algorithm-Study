@@ -1,15 +1,14 @@
 // https://www.acmicpc.net/problem/3986
-package 백준.S4_3986;
+package baekjoon.S4_3986;
 
 import java.io.BufferedReader;
-import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.Stack;
 
-public class S4_3986 {
+public class Main {
 
-    public String solution(InputStream systemIn) throws Exception{
-        BufferedReader br = new BufferedReader(new InputStreamReader(systemIn));
+    public void main(String[] args) throws Exception{
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int result = 0;
 
         int testCase = Integer.parseInt(br.readLine());
@@ -29,7 +28,6 @@ public class S4_3986 {
         }
 
         System.out.println(result);
-        return String.valueOf(result);
     }
 
 }

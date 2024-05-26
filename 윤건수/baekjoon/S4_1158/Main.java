@@ -1,19 +1,18 @@
 // https://www.acmicpc.net/problem/1158
-package 백준.S4_1158;
+package baekjoon.S4_1158;
 
 import java.io.BufferedReader;
-import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class S4_1158 {
+public class Main {
 
-    public String solution(InputStream systemIn) throws Exception {
+    public static void main(String[] args) throws Exception {
 
-        BufferedReader br = new BufferedReader(new InputStreamReader(systemIn));
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
         int maxNum = Integer.parseInt(st.nextToken());
         int cycle = Integer.parseInt(st.nextToken());
@@ -43,7 +42,6 @@ public class S4_1158 {
         ret.append(">");
 
         System.out.println(ret);
-        return ret.toString();
     }
 
 }
