@@ -1,0 +1,118 @@
+import java.awt.*;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
+import java.lang.reflect.Array;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.stream.IntStream;
+
+public interface Problem<P, R>{
+
+    Problem<P, R> setAnswer(Object answer);
+    HashMap<String, P> getInputCase();
+    HashMap<String, R> getResultCase();
+    R solve(P parameter) throws Exception;
+
+    default void test() {
+
+        try {
+            // Result 저장
+            Map<String, R> resultCase = getResultCase();
+            boolean isSuccess = true;
+
+            Map<String, P> inputCase = getInputCase();
+            for (String caseKey : inputCase.keySet()) {
+                P input = inputCase.get(caseKey);
+
+                System.out.println("테스트 실행 Input");
+                println(input);
+
+                long startTime = System.nanoTime();
+                R testResult = solve(input);
+                long endTime = System.nanoTime();
+
+                println("실행시간: " + (endTime-startTime)/1_000_000.00 +"ms");
+                System.out.println();
+
+                R expectResult = resultCase.get(caseKey);
+                boolean isCaseSuccess = expectResult.equals(testResult);
+                isSuccess = isSuccess && isCaseSuccess;
+
+                println("정답");
+                println(expectResult);
+                System.out.println();
+
+                println("결과");
+                println(testResult);
+                System.out.println();
+
+                if(isCaseSuccess){
+                    passPrintln("Case 통과");
+                }else{
+                    failPrintln("Case 실패");
+                }
+
+                System.out.println();
+                println("=======================================================================================");
+            }
+
+            if(isSuccess){
+                passPrintln("모든 테스트가 통과하였습니다.");
+                System.out.println();
+            }else{
+                failPrintln("************** 실패한 테스트가 있습니다. 결과를 확인해주세요 **************");
+                // 실패시 소리
+                Toolkit.getDefaultToolkit().beep();
+                System.out.println();
+            }
+
+        } catch (Exception e){
+            e.printStackTrace();
+        }
+    };
+
+    private void passPrintln(String str){
+        // console 색상
+        String reset = "\u001B[0m";
+        String green = "\u001B[32m";
+        println(green + str + reset);
+    }
+
+    private void failPrintln(String str){
+        // console 색상
+        String red = "\u001B[31m";
+        String reset = "\u001B[0m";
+        println(red + str + reset);
+    }
+
+    default void println(Object input){
+        if(input instanceof File) {
+            try{
+                FileInputStream inputFileStream = new FileInputStream((File)input);
+                BufferedReader br = new BufferedReader(new InputStreamReader(inputFileStream));
+                StringBuilder fileString = new StringBuilder();
+                String line = "";
+                while ((line = br.readLine()) != null) {
+                    fileString.append(line).append(System.lineSeparator());
+                }
+                System.out.println(fileString);
+            }catch (Exception e){
+                e.printStackTrace();
+                throw new RuntimeException(e);
+            }
+        }else if (input.getClass().isArray()) {
+            int length = Array.getLength(input);
+            Object[] array = new Object[length];
+            IntStream.range(0, length).forEach(i ->
+                    array[i] = Array.get(input, i)
+            );
+            System.out.println(Arrays.toString(array));
+        } else {
+            System.out.println(input);
+        }
+    }
+
+}
