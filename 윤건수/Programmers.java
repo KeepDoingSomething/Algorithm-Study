@@ -56,10 +56,15 @@ public class Programmers<R> implements Problem<Object[], R>{
     @Override
     public R solve(Object[] parameter) throws Exception {
         Method[] methods = answer.getClass().getDeclaredMethods();
+
+        // Solution class 변수 초기화를 위해 solve 마다 새로운 instance 생성
+        Constructor constructor = answer.getClass().getConstructor();
+        Object instance = constructor.newInstance();
+
         R result = null;
         for(Method method : methods){
             if(method.getName().equals("solution")){
-                result = (R) method.invoke(answer, parameter);
+                result = (R) method.invoke(instance, parameter);
             }
         }
         return result;
