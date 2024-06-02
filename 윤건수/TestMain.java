@@ -54,15 +54,33 @@ public class TestMain {
 
         // 전력망을 둘로 나누기  (Level 2)
         // https://school.programmers.co.kr/learn/courses/30/lessons/86971
-        programmersReturnInt.setAnswer(new programmers.LV2_86971.Solution()).test();
+        // programmersReturnInt.setAnswer(new programmers.LV2_86971.Solution()).test();
 
         // [PCCP 기출문제] 3번 / 아날로그 시계  (Level 2)
         // https://school.programmers.co.kr/learn/courses/30/lessons/250135
-        programmersReturnInt.setAnswer(new programmers.LV2_250135.Solution()).test();
+        // programmersReturnInt.setAnswer(new programmers.LV2_250135.Solution()).test();
 
         // 표 편집  (Level 3)
         // https://school.programmers.co.kr/learn/courses/30/lessons/81303
-        programmersReturnString.setAnswer(new programmers.LV3_81303.Solution()).test();
+        // programmersReturnString.setAnswer(new programmers.LV3_81303.Solution()).test();
+
+
+
+        /*
+         * 스터디 4주차
+         * */
+
+        // 소수 찾기 (Level 2)
+        // https://school.programmers.co.kr/learn/courses/30/lessons/42839
+        programmersReturnInt.setAnswer(new programmers.LV2_42839.Solution()).test();
+
+        // 어린왕자 (Silver 3)
+        // https://www.acmicpc.net/problem/1004
+        baekJoon.setAnswer(new baekjoon.S3_2606.Main()).test();
+
+        // 바이러스 (Level 3)
+        // https://www.acmicpc.net/problem/2606
+        baekJoon.setAnswer(new baekjoon.S3_1004.Main()).test();
     }
 
 }
