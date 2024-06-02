@@ -98,21 +98,39 @@ public interface Problem<P, R>{
                 while ((line = br.readLine()) != null) {
                     fileString.append(line).append(System.lineSeparator());
                 }
-                System.out.println(fileString);
+                System.out.print(fileString);
             }catch (Exception e){
                 e.printStackTrace();
                 throw new RuntimeException(e);
             }
         }else if (input.getClass().isArray()) {
-            int length = Array.getLength(input);
-            Object[] array = new Object[length];
-            IntStream.range(0, length).forEach(i ->
-                    array[i] = Array.get(input, i)
-            );
-            System.out.println(Arrays.toString(array));
+            printArray(input);
         } else {
-            System.out.println(input);
+            System.out.print(input);
         }
+
+        System.out.println();
+    }
+
+    default void printArray(Object input){
+        int length = Array.getLength(input);
+        Object[] array = new Object[length];
+        IntStream.range(0, length).forEach(i ->
+                array[i] = Array.get(input, i)
+        );
+
+        System.out.print("[");
+        for(int i = 0; i < array.length; i++){
+            Object value = array[i];
+            if(value.getClass().isArray()){
+                printArray(value);
+            }else{
+                System.out.print(value);
+            }
+            if(i != array.length - 1) System.out.print(", ");
+        }
+
+        System.out.print("]");
     }
 
 }
