@@ -28,14 +28,13 @@ public class Q86971 {
                 graph.computeIfAbsent(y, k -> new HashSet<>()).add(x);
             }
 
-            System.out.println(graph);
             int minGap = Integer.MAX_VALUE;
 
             for(int i = 0; i < wires.length; i++) {
                 int disX = wires[i][0] - 1;  // 연결 끊기는점 x
                 int disY = wires[i][1] - 1;  // 연결 끊기는점 y
                 boolean[] visited = new boolean[n];
-                int gap = 0;
+                int one = 0;
 
                 // 그래프 연결 끊기
                 graph.get(disX).remove(disY);
@@ -43,10 +42,13 @@ public class Q86971 {
 
                 for(int j = 0; j < n; j++) {
                     if(!visited[j]) {
-                        gap = Math.abs(gap - bfs(j, visited));
+                        one = bfs(j, visited);
+                        break;
                     }
                 }
-                minGap = Math.min(gap, minGap);
+
+                int another = Math.abs(n - one);
+                minGap = Math.min(minGap, Math.abs(another - one));
 
                 // 그래프 끊은 연결 다시 회복
                 graph.get(disX).add(disY);
