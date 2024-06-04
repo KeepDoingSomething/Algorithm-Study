@@ -1,5 +1,7 @@
 package com;
 
+import com.Week04.S3_1004.S3_1004;
+import com.Week04.S3_2606.S3_2606;
 import com.self.S1_2468.Q2468;
 
 import java.io.*;
@@ -28,7 +30,7 @@ public class RunProblem {
     }
 
     public static void main(String[] args) throws Exception {
-        Solution sol = new Q2468();
+        Solution sol = new S3_2606();
 
         List<File> inputFiles = Arrays.stream(new File(sol.getClass().getResource(INPUT_DIR).toURI()).listFiles())
                                       .sorted(fileNameNaturalOrder(File::getName))
