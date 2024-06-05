@@ -1,3 +1,6 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.LinkedList;
 import java.util.Scanner;
 /**
@@ -7,16 +10,17 @@ import java.util.Scanner;
  * Memory    : 18008KB
  * Algorithm : DFS
  */
-public class 바이러스 {
+public class  바이러스 {
 
     static LinkedList<LinkedList<Integer>> list = new LinkedList<LinkedList<Integer>>();
     public static boolean[] visited;
     public static int cnt = 0;
 
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int num = sc.nextInt(); // 컴퓨터의 수
-        int link = sc.nextInt(); // 연결된 쌍의 수
+    public static void main(String[] args) throws IOException {
+        BufferedReader sc = new BufferedReader(new InputStreamReader(System.in));
+
+        int num = Integer.parseInt(sc.readLine()); // 컴퓨터의 수
+        int link = Integer.parseInt(sc.readLine()); // 연결된 쌍의 수
 
         visited = new boolean[num + 1]; // 방문 배열 크기 설정
         for (int i = 0; i < num + 1; i++) {
@@ -24,8 +28,9 @@ public class 바이러스 {
         }
 
         for (int i = 0; i < link; i++) {
-            int from = sc.nextInt();
-            int to = sc.nextInt();
+            String[] split = sc.readLine().split(" ");
+            int from = Integer.parseInt(split[0]);
+            int to = Integer.parseInt(split[1]);
             list.get(from).add(to);
             list.get(to).add(from);
         }
