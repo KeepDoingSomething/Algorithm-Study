@@ -41,14 +41,13 @@ public class Main {
         visit = new boolean[n+1];
         bfs(1);
 
-        System.out.println(count - 1);
+        System.out.println(count);
     }
 
     static void bfs(int v) {
         Queue<Integer> q = new LinkedList<>();
         q.add(v);
         visit[v] = true;
-        count += 1;
 
         while (!q.isEmpty()) {
             int cur = q.poll();
