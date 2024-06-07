@@ -1,4 +1,5 @@
 import java.io.*;
+import java.lang.reflect.Constructor;
 import java.net.URL;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -71,9 +72,13 @@ public class BaekJoon implements Problem<File, String>{
         PrintStream resultConsole = System.out;
 
         System.setOut(resultSave);
-        answer.getClass()
+
+        // Solution class 변수 초기화를 위해 solve 마다 새로운 instance 생성
+        Constructor constructor = answer.getClass().getConstructor();
+        Object instance = constructor.newInstance();
+        instance.getClass()
                 .getDeclaredMethod("main", String[].class)
-                .invoke(answer, (Object) null);
+                .invoke(instance, (Object) null);
         System.out.flush();
 
         String testResult = resultOutputStream.toString().trim(); // System.out.println() 으로 정답 입력시 개행문자 제거
