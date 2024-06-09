@@ -9,6 +9,7 @@
 |이인복|[<img src="https://avatars.githubusercontent.com/nashs789" width="50px;">](https://github.com/nashs789)|<span><img src="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span> <span><img src="https://img.shields.io/badge/Python-3776AB.svg?&style=for-the-badge&logo=Python&logoColor=white"/></span>|
 |최지호|[<img src="https://avatars.githubusercontent.com/wlghsp" width="50px;">](https://github.com/wlghsp)|<span><img src="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span> <span><img src="https://img.shields.io/badge/Python-3776AB.svg?&style=for-the-badge&logo=Python&logoColor=white"/></span>|
 |김재환|[<img src="https://avatars.githubusercontent.com/Podola" width="50px;">](https://github.com/Podola)|<span><img src="https://img.shields.io/badge/Python-3776AB.svg?&style=for-the-badge&logo=Python&logoColor=white"/></span>|
+|김호집|[<img src="https://avatars.githubusercontent.com/Hojip-Kim" width="50px;">](https://github.com/Hojip-Kim)|<span><img src="https://img.shields.io/badge/Python-3776AB.svg?&style=for-the-badge&logo=Python&logoColor=white"/></span>|
 |윤건수|[<img src="https://avatars.githubusercontent.com/ygs3004" width="50px;">](https://github.com/ygs3004)|<span><img src="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span>|
 |허준범|[<img src="https://avatars.githubusercontent.com/mommos1" width="50px;">](https://github.com/mommos1)|<span><img src="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span>|
 |전유진|[<img src="https://avatars.githubusercontent.com/jacomyou1026" width="50px;">](https://github.com/jacomyou1026)|<span><img src="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span>|
@@ -119,6 +120,8 @@ Remove: 파일, 폴더 삭제
 
 </br>
 
+※ 이해가 안가는 부분이 있다면 노션을 참고해주세요.
+[[Notion]](https://mud-cyclamen-784.notion.site/309dd9fab33c48a6b22e80cf33c9e836?pvs=4)
 
 # **[ ⛬ 히스토리 ]**
 
@@ -128,3 +131,4 @@ Remove: 파일, 폴더 삭제
 |05.20 - 05.26|[Week02](https://github.com/KeepDoingSomething/Algorithm-Study/issues/13)|
 |05.27 - 06.02|[Week03](https://github.com/KeepDoingSomething/Algorithm-Study/issues/20)|
 |06.03 - 06.09|[Week04](https://github.com/KeepDoingSomething/Algorithm-Study/issues/29)|
+|06.10 - 06.16|[Week05](https://github.com/KeepDoingSomething/Algorithm-Study/issues/37)|
