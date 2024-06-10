@@ -6,7 +6,7 @@ public class TestMain {
 
         BaekJoon baekJoon = new BaekJoon();
         Programmers<String> programmersReturnString = new Programmers<>();
-        Programmers<String> programmersReturnInt = new Programmers<>();
+        Programmers<Integer> programmersReturnInt = new Programmers<>();
 
         /*
         * 스터디 1주차
@@ -72,15 +72,33 @@ public class TestMain {
 
         // 소수 찾기 (Level 2)
         // https://school.programmers.co.kr/learn/courses/30/lessons/42839
-        programmersReturnInt.setAnswer(new programmers.LV2_42839.Solution()).test();
+        // programmersReturnInt.setAnswer(new programmers.LV2_42839.Solution()).test();
 
         // 어린왕자 (Silver 3)
         // https://www.acmicpc.net/problem/1004
-        baekJoon.setAnswer(new baekjoon.S3_2606.Main()).test();
+        // baekJoon.setAnswer(new baekjoon.S3_2606.Main()).test();
 
         // 바이러스 (Level 3)
         // https://www.acmicpc.net/problem/2606
-        baekJoon.setAnswer(new baekjoon.S3_1004.Main()).test();
+        // baekJoon.setAnswer(new baekjoon.S3_1004.Main()).test();
+
+
+
+        /*
+         * 스터디 5주차
+         * */
+
+        // 네트워크 연결 (Gold 4)
+        // https://www.acmicpc.net/problem/1922
+        baekJoon.setAnswer(new baekjoon.G4_1922.Main()).test();
+
+        // 사칙연산 (Level 4)
+        // https://school.programmers.co.kr/learn/courses/30/lessons/1843
+        programmersReturnInt.setAnswer(new programmers.LV4_1843.Solution()).test();
+
+        // 가장 큰 정사각형 찾기 (Level 2)
+        // https://school.programmers.co.kr/learn/courses/30/lessons/12905
+        programmersReturnInt.setAnswer(new programmers.LV2_12905.Solution()).test();
     }
 
 }
