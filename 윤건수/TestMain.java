@@ -90,15 +90,33 @@ public class TestMain {
 
         // 네트워크 연결 (Gold 4)
         // https://www.acmicpc.net/problem/1922
-        baekJoon.setAnswer(new baekjoon.G4_1922.Main()).test();
+        // baekJoon.setAnswer(new baekjoon.G4_1922.Main()).test();
 
         // 사칙연산 (Level 4)
         // https://school.programmers.co.kr/learn/courses/30/lessons/1843
-        programmersReturnInt.setAnswer(new programmers.LV4_1843.Solution()).test();
+        // programmersReturnInt.setAnswer(new programmers.LV4_1843.Solution()).test();
 
         // 가장 큰 정사각형 찾기 (Level 2)
         // https://school.programmers.co.kr/learn/courses/30/lessons/12905
-        programmersReturnInt.setAnswer(new programmers.LV2_12905.Solution()).test();
+        // programmersReturnInt.setAnswer(new programmers.LV2_12905.Solution()).test();
+
+
+
+        /*
+         * 스터디 5주차
+         * */
+
+        // 피로도 (Level 2)
+        // https://school.programmers.co.kr/learn/courses/30/lessons/87946
+        programmersReturnInt.setAnswer(new programmers.LV2_87946.Solution()).test();
+
+        // 유기농 배추 (Silver 2)
+        // https://www.acmicpc.net/problem/1012
+        baekJoon.setAnswer(new baekjoon.S2_1012.Main()).test();
+
+        // 보석 도둑 (Gold 2)
+        // https://www.acmicpc.net/problem/1202
+        baekJoon.setAnswer(new baekjoon.G2_1202.Main()).test();
     }
 
 }
