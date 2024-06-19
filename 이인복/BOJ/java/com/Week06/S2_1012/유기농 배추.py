@@ -1,3 +1,11 @@
+'''
+Author    : Lee In Bok
+Date      : 2024.06.18(Tue)
+Runtime   : 34088 KB
+Memory    : 80 ms
+Algorithm : Graph
+'''
+
 import sys
 from collections import deque
 input = sys.stdin.readline
