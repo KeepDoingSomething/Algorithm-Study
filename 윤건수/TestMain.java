@@ -124,11 +124,11 @@ public class TestMain {
 
         // 게임 맵 최단거리 (Level 2)
         // https://school.programmers.co.kr/learn/courses/30/lessons/1844
-        // programmersReturnInt.setAnswer(new programmers.LV2_1844.Solution()).test();
+        programmersReturnInt.setAnswer(new programmers.LV2_1844.Solution()).test();
 
         // 상범 빌딩 (Gold 5)
         // https://www.acmicpc.net/problem/6593
-        // baekJoon.setAnswer(new baekjoon.G5_6593.Main()).test();
+        baekJoon.setAnswer(new baekjoon.G5_6593.Main()).test();
 
         // 마법사 상어와 파이어스톰 (Gold 3)
         // https://www.acmicpc.net/problem/20058
