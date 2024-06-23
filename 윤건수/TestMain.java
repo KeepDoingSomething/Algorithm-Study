@@ -1,5 +1,3 @@
-import programmers.LV2_12899.Solution;
-
 public class TestMain {
 
     public static void main(String[] args) throws Exception {
@@ -103,20 +101,38 @@ public class TestMain {
 
 
         /*
-         * 스터디 5주차
+         * 스터디 6주차
          * */
 
         // 피로도 (Level 2)
         // https://school.programmers.co.kr/learn/courses/30/lessons/87946
-        programmersReturnInt.setAnswer(new programmers.LV2_87946.Solution()).test();
+        // programmersReturnInt.setAnswer(new programmers.LV2_87946.Solution()).test();
 
         // 유기농 배추 (Silver 2)
         // https://www.acmicpc.net/problem/1012
-        baekJoon.setAnswer(new baekjoon.S2_1012.Main()).test();
+        // baekJoon.setAnswer(new baekjoon.S2_1012.Main()).test();
 
         // 보석 도둑 (Gold 2)
         // https://www.acmicpc.net/problem/1202
-        baekJoon.setAnswer(new baekjoon.G2_1202.Main()).test();
+        // baekJoon.setAnswer(new baekjoon.G2_1202.Main()).test();
+
+
+
+        /*
+         * 스터디 7주차
+         * */
+
+        // 게임 맵 최단거리 (Level 2)
+        // https://school.programmers.co.kr/learn/courses/30/lessons/1844
+        // programmersReturnInt.setAnswer(new programmers.LV2_1844.Solution()).test();
+
+        // 상범 빌딩 (Gold 5)
+        // https://www.acmicpc.net/problem/6593
+        // baekJoon.setAnswer(new baekjoon.G5_6593.Main()).test();
+
+        // 마법사 상어와 파이어스톰 (Gold 3)
+        // https://www.acmicpc.net/problem/20058
+        baekJoon.setAnswer(new baekjoon.G3_20058.Main()).test();
     }
 
 }
