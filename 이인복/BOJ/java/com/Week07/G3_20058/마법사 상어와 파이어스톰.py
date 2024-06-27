@@ -8,28 +8,18 @@ maps = [list(map(int, inp().split(' '))) for _ in range(pow(2, N))]
 cmds = list(map(int, inp().split(' ')))
 visited = [[False for _ in range(len(maps))] for _ in range(len(maps))]
 move = [0, 1, 0, -1]
-max_value, sums = 0, 0
+max_chunk, sums = 0, 0
 
 def rotate(cmd, maps):
   copy_map = deepcopy(maps)
   rb = pow(2, cmd)  # 다음 rotate 기준 좌표(rotate border)
-  sb = 0 if cmd - 2 < 0 else pow(2, (cmd - 2)) # rotate 이루어지는 좌표(small border)
-  rotate_move = [rb // 2, 0, -(rb // 2), 0]
+  n = len(maps)
 
-  for i in range(0, len(maps), rb):
-    for j in range(0, len(maps), rb):
-      for k in range(i, i + pow(2, sb)):
-        for l in range(j, j + pow(2, sb)):
-          cur_x = k
-          cur_y = l
-
-          for idx in range(4):
-            next_x = cur_x + rotate_move[idx - 1]
-            next_y = cur_y + rotate_move[idx]
-
-            maps[next_x][next_y] = copy_map[cur_x][cur_y]
-            cur_x = next_x
-            cur_y = next_y
+  for i in range(0, n, rb):
+    for j in range(0, n, rb):
+      for x in range(rb):
+        for y in range(rb):
+            maps[i + y][j + rb - 1 - x] = copy_map[i + x][j + y]
 
 
 def is_valid(x, y, maps):
@@ -58,7 +48,7 @@ def melt(maps):
       maps[x][y] -= 1
 
 def bfs(srt, visited, maps):
-  global max_value
+  global max_chunk
   queue = deque([srt])
   chunk = 0
   sums = 0
@@ -66,23 +56,24 @@ def bfs(srt, visited, maps):
   while queue:
     x, y = queue.popleft()
     sums += maps[x][y]
-    chunk += 1
+
+    if maps[x][y] != 0:
+      chunk += 1
 
     for idx in range(4):
       next_x = x + move[idx]
       next_y = y + move[idx - 1]
 
-      if is_valid(next_x, next_y, maps) and not visited[next_x][next_y]:
+      if is_valid(next_x, next_y, maps) and not visited[next_x][next_y] and maps[next_x][next_y] != 0:
         queue.append((next_x, next_y))
         visited[next_x][next_y] = True
 
-  max_value = max(max_value, chunk)  # 가장 큰 덩어리
+  max_chunk = max(max_chunk, chunk)  # 가장 큰 덩어리
   return sums
 
 for cmd in cmds:
-  if cmd != 0:
-    rotate(cmd, maps)
-    melt(maps)
+  rotate(cmd, maps)
+  melt(maps)
 
 for i in range(len(maps)):
     for j in range(len(maps)):
@@ -91,4 +82,48 @@ for i in range(len(maps)):
         sums += bfs((i, j), visited, maps)
 
 print(sums)
-print(max_value)
+print(max_chunk)
+
+''' 하..... 스트레스
+def rotate(cmd, maps):
+  copy_map = deepcopy(maps)
+  rb = pow(2, cmd)  # 다음 rotate 기준 좌표(rotate border)
+  sb = 0 if cmd - 2 < 0 else pow(2, (cmd - 2)) # rotate 이루어지는 좌표(small border)
+  rotate_move = [rb // 2, 0, -(rb // 2), 0]
+
+  for i in range(0, len(maps), rb):
+    for j in range(0, len(maps), rb):
+      for k in range(i, i + pow(2, sb)):
+        for l in range(j, j + pow(2, sb)):
+          cur_x = k
+          cur_y = l
+
+          for idx in range(4):
+            next_x = cur_x + rotate_move[idx - 1]
+            next_y = cur_y + rotate_move[idx]
+
+            maps[next_x][next_y] = copy_map[cur_x][cur_y]
+            cur_x = next_x
+            cur_y = next_y
+3 1
+1 2 3 4 5 6 7 8
+8 7 6 5 4 3 2 1
+1 2 3 4 5 6 7 8
+8 7 6 5 4 3 2 1
+1 2 3 4 5 6 7 8
+8 7 6 5 4 3 2 1
+1 2 3 4 5 6 7 8
+8 7 6 5 4 3 2 1
+1 2
+
+3 1
+1 2 3 4 5 6 7 8
+8 7 6 5 4 3 2 1
+1 2 3 4 5 6 7 8
+8 7 6 5 4 3 2 1
+1 2 3 4 5 6 7 8
+8 7 6 5 4 3 2 1
+1 2 3 4 5 6 7 8
+8 7 6 5 4 3 2 1
+3
+'''
