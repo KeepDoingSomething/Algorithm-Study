@@ -1,3 +1,11 @@
+'''
+Author    : Lee In Bok
+Date      : 2024.06.28(Fri)
+Runtime   : 121840 KB
+Memory    : 1020 ms (Pypy3)
+Algorithm : Implement
+'''
+
 import sys
 from copy import deepcopy
 from collections import deque
@@ -15,6 +23,8 @@ def rotate(cmd, maps):
   rb = pow(2, cmd)  # 다음 rotate 기준 좌표(rotate border)
   n = len(maps)
 
+  # i, j 는 회전 강도(L) 에 따른 경계선의 시작을 의미
+  # x, y 는 경계선 내부에서 회전하기 위한 인덱스
   for i in range(0, n, rb):
     for j in range(0, n, rb):
       for x in range(rb):
@@ -27,7 +37,7 @@ def is_valid(x, y, maps):
   return 0 <= x < ln and 0 <= y < ln
 
 def melt(maps):
-  melt_target = []
+  melt_target = []  #  녹여줄 얼음 좌표
 
   for i in range(len(maps)):
     for j in range(len(maps)):
@@ -37,10 +47,11 @@ def melt(maps):
         next_x = i + move[idx]
         next_y = j + move[idx - 1]
 
+        # 접근 가능하고 얼음이 존재한다면
         if is_valid(next_x, next_y, maps) and maps[next_x][next_y] != 0:
           cnt += 1
 
-      if cnt < 3:
+      if cnt < 3:  # 3개의 칸 이상의 얼음이 둘러쌓지 않음
         melt_target.append((i, j))
 
   for x, y in melt_target:
@@ -69,13 +80,13 @@ def bfs(srt, visited, maps):
         visited[next_x][next_y] = True
 
   max_chunk = max(max_chunk, chunk)  # 가장 큰 덩어리
-  return sums
+  return sums # 총 합
 
-for cmd in cmds:
+for cmd in cmds:  # 메인 로직 실행
   rotate(cmd, maps)
   melt(maps)
 
-for i in range(len(maps)):
+for i in range(len(maps)):  # 그래프 탐색 시행
     for j in range(len(maps)):
       if not visited[i][j]:
         visited[i][j] = True
@@ -105,25 +116,4 @@ def rotate(cmd, maps):
             maps[next_x][next_y] = copy_map[cur_x][cur_y]
             cur_x = next_x
             cur_y = next_y
-3 1
-1 2 3 4 5 6 7 8
-8 7 6 5 4 3 2 1
-1 2 3 4 5 6 7 8
-8 7 6 5 4 3 2 1
-1 2 3 4 5 6 7 8
-8 7 6 5 4 3 2 1
-1 2 3 4 5 6 7 8
-8 7 6 5 4 3 2 1
-1 2
-
-3 1
-1 2 3 4 5 6 7 8
-8 7 6 5 4 3 2 1
-1 2 3 4 5 6 7 8
-8 7 6 5 4 3 2 1
-1 2 3 4 5 6 7 8
-8 7 6 5 4 3 2 1
-1 2 3 4 5 6 7 8
-8 7 6 5 4 3 2 1
-3
 '''

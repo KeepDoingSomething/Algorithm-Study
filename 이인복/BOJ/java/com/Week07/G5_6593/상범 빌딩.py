@@ -1,3 +1,11 @@
+'''
+Author    : Lee In Bok
+Date      : 2024.06.25(Mon)
+Runtime   : 34088 KB
+Memory    : 192 ms
+Algorithm : BFS
+'''
+
 import sys
 from collections import deque
 inp = sys.stdin.readline
