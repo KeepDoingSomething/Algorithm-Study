@@ -1,3 +1,12 @@
+'''
+Author    : Lee In Bok
+Date      : 2024.06.09(Sun)
+Runtime   : 52540 KB
+Memory    : 432 ms
+Algorithm : Prim
+'''
+
+''' 1차 풀이 - 프림 알고리즘
 import sys
 from heapq import heappop, heappush
 
@@ -32,3 +41,4 @@ def prim():
   return ans
 
 print(prim())
+'''
