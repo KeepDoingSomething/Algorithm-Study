@@ -145,11 +145,11 @@ public class TestMain {
 
         // 옥상 정원 꾸미기 (Gold 5)
         // https://www.acmicpc.net/problem/6198
-        baekJoon.setAnswer(new baekjoon.G5_6198.Main()).test();
+        // baekJoon.setAnswer(new baekjoon.G5_6198.Main()).test();
 
         // 마법사 상어와 파이어볼 (Gold 4)
         // https://www.acmicpc.net/problem/20056
-        // baekJoon.setAnswer(new baekjoon.G4_20056.Main()).test();
+        baekJoon.setAnswer(new baekjoon.G4_20056.Main()).test();
     }
 
 }
