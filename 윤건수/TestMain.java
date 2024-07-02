@@ -141,11 +141,11 @@ public class TestMain {
 
         // 하노이의 탑 (Level 2)
         // https://school.programmers.co.kr/learn/courses/30/lessons/12946
-        programmers.setAnswer(new programmers.LV2_12946.Solution()).test();
+        // programmers.setAnswer(new programmers.LV2_12946.Solution()).test();
 
         // 옥상 정원 꾸미기 (Gold 5)
         // https://www.acmicpc.net/problem/6198
-        // baekJoon.setAnswer(new baekjoon.G5_6198.Main()).test();
+        baekJoon.setAnswer(new baekjoon.G5_6198.Main()).test();
 
         // 마법사 상어와 파이어볼 (Gold 4)
         // https://www.acmicpc.net/problem/20056
