@@ -1,8 +1,8 @@
 /**
  * Author    : Lee In Bok
  * Date      : 2024.07.04(Mon)
- * Runtime   : 24448 KB
- * Memory    : 300 ms
+ * Runtime   : 23572 KB
+ * Memory    : 248 ms
  * Algorithm : Stack
  */
 
@@ -18,7 +18,7 @@ public class G5_6198 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         Stack<Integer> stack = new Stack<>();
         int N = Integer.parseInt(br.readLine());
-        int ans = 0;
+        long ans = 0;
 
         for(int i = 0; i < N; i++) {
             int num = Integer.parseInt(br.readLine());
@@ -27,8 +27,8 @@ public class G5_6198 {
                 stack.pop();
             }
 
+            ans += stack.size();
             stack.push(num);
-            ans += stack.size() - 1;
         }
 
         System.out.println(ans);
