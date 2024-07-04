@@ -1,3 +1,11 @@
+'''
+Author    : Lee In Bok
+Date      : 2024.07.04(Thu)
+Runtime   : 32140 KB
+Memory    : 576 ms
+Algorithm : Implementation
+'''
+
 import sys
 inp = sys.stdin.readline
 
