@@ -9,18 +9,18 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.stream.IntStream;
 
-public interface Problem<P, R>{
+public interface Problem<P>{
 
-    Problem<P, R> setAnswer(Object answer);
+    Problem setAnswer(Object answer);
     HashMap<String, P> getInputCase();
-    HashMap<String, R> getResultCase();
-    R solve(P parameter) throws Exception;
+    HashMap<String, Object> getResultCase();
+    Object solve(P parameter) throws Exception;
 
     default void test() {
 
         try {
             // Result 저장
-            Map<String, R> resultCase = getResultCase();
+            Map<String, Object> resultCase = getResultCase();
             boolean isSuccess = true;
 
             Map<String, P> inputCase = getInputCase();
@@ -31,14 +31,21 @@ public interface Problem<P, R>{
                 println(input);
 
                 long startTime = System.nanoTime();
-                R testResult = solve(input);
+                Object testResult = solve(input);
                 long endTime = System.nanoTime();
 
                 println("실행시간: " + (endTime-startTime)/1_000_000.00 +"ms");
                 System.out.println();
 
-                R expectResult = resultCase.get(caseKey);
-                boolean isCaseSuccess = expectResult.equals(testResult);
+                Object expectResult = resultCase.get(caseKey);
+
+                boolean isCaseSuccess;
+                if(NestedArrayUtil.isNestedArray(expectResult)){
+                    isCaseSuccess = NestedArrayUtil.compareNestedArrays(expectResult, testResult);
+                }else {
+                    isCaseSuccess = expectResult.equals(testResult);
+                }
+
                 isSuccess = isSuccess && isCaseSuccess;
 
                 println("정답");

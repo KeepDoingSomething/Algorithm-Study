@@ -11,7 +11,6 @@
 |김재환|[<img src="https://avatars.githubusercontent.com/Podola" width="50px;">](https://github.com/Podola)|<span><img src="https://img.shields.io/badge/Python-3776AB.svg?&style=for-the-badge&logo=Python&logoColor=white"/></span>|
 |김호집|[<img src="https://avatars.githubusercontent.com/Hojip-Kim" width="50px;">](https://github.com/Hojip-Kim)|<span><img src="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span> <span><img src="https://img.shields.io/badge/Python-3776AB.svg?&style=for-the-badge&logo=Python&logoColor=white"/></span><span><img src="https://img.shields.io/badge/C++-Solutions-blue.svg?style=flat&logo=c%2B%2B" /></span>|
 |윤건수|[<img src="https://avatars.githubusercontent.com/ygs3004" width="50px;">](https://github.com/ygs3004)|<span><img src="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span>|
-|허준범|[<img src="https://avatars.githubusercontent.com/mommos1" width="50px;">](https://github.com/mommos1)|<span><img src="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span>|
 |전유진|[<img src="https://avatars.githubusercontent.com/jacomyou1026" width="50px;">](https://github.com/jacomyou1026)|<span><img src="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span>|
 |은채|[<img src="https://avatars.githubusercontent.com/eunchae01" width="50px;">](https://github.com/eunchae01)|<span><img src="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span>|
 
@@ -133,3 +132,6 @@ Remove: 파일, 폴더 삭제
 |06.03 - 06.09|[Week04](https://github.com/KeepDoingSomething/Algorithm-Study/issues/29)|
 |06.10 - 06.16|[Week05](https://github.com/KeepDoingSomething/Algorithm-Study/issues/37)|
 |06.17 - 06.23|[Week06](https://github.com/KeepDoingSomething/Algorithm-Study/issues/43)|
+|06.24 - 06.30|[Week07](https://github.com/KeepDoingSomething/Algorithm-Study/issues/51)|
+|07.01 - 07.07|[Week08](https://github.com/KeepDoingSomething/Algorithm-Study/issues/56)|
+|07.08 - 07.14|[Week08](https://github.com/KeepDoingSomething/Algorithm-Study/issues/61)|

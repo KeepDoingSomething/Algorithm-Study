@@ -1,8 +1,6 @@
 package com;
 
-import com.Week04.S3_1004.S3_1004;
 import com.Week04.S3_2606.S3_2606;
-import com.self.S1_2468.Q2468;
 
 import java.io.*;
 import java.nio.file.Files;
@@ -81,7 +79,7 @@ public class RunProblem {
              PrintStream resultOutStream = new PrintStream(new FileOutputStream(RESULT_FILE_NAME))) {
 
             System.setIn(inputFileStream);  // 파일 입력을 System.in 으로 리디렉션
-            System.setOut(resultOutStream);  // 임시 파일에 출력
+            //System.setOut(resultOutStream);  // 임시 파일에 출력
 
             Long srtTime = System.currentTimeMillis();
             sol.solution();
