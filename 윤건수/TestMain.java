@@ -1,3 +1,5 @@
+import programmers.LV2_42587.Solution;
+
 public class TestMain {
 
     public static void main(String[] args) throws Exception {
@@ -159,15 +161,33 @@ public class TestMain {
 
         // 행렬 테두리 회전하기 (Level 2)
         // https://school.programmers.co.kr/learn/courses/30/lessons/77485
-        programmers.setAnswer(new programmers.LV2_77485.Solution()).test();
+        // programmers.setAnswer(new programmers.LV2_77485.Solution()).test();
 
         // 문자열 폭발 (Gold 4)
         // https://www.acmicpc.net/problem/9935
-        baekJoon.setAnswer(new baekjoon.G4_9935.Main()).test();
+        // baekJoon.setAnswer(new baekjoon.G4_9935.Main()).test();
 
         // 택배 배달과 수거하기 (Level 2)
         // https://school.programmers.co.kr/learn/courses/30/lessons/150369
-        programmers.setAnswer(new programmers.LV2_150369.Solution()).test();
+        // programmers.setAnswer(new programmers.LV2_150369.Solution()).test();
+
+
+
+        /*
+         * 스터디 10주차
+         * */
+
+        // 프로세스 (Level 2)
+        // https://school.programmers.co.kr/learn/courses/30/lessons/42587
+         programmers.setAnswer(new programmers.LV2_42587.Solution()).test();
+
+        //  뉴스 클러스터링 (Level 2)
+        // https://school.programmers.co.kr/learn/courses/30/lessons/17677
+        programmers.setAnswer(new programmers.LV2_17677.Solution()).test();
+
+        // 여행경로 (Level 2)
+        // https://school.programmers.co.kr/learn/courses/30/lessons/43164
+        programmers.setAnswer(new programmers.LV2_43164.Solution()).test();
     }
 
 }
