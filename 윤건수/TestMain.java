@@ -181,7 +181,7 @@ public class TestMain {
         // https://school.programmers.co.kr/learn/courses/30/lessons/42587
          programmers.setAnswer(new programmers.LV2_42587.Solution()).test();
 
-        //  뉴스 클러스터링 (Level 2)
+        // 뉴스 클러스터링 (Level 2)
         // https://school.programmers.co.kr/learn/courses/30/lessons/17677
         programmers.setAnswer(new programmers.LV2_17677.Solution()).test();
 
