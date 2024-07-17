@@ -28,11 +28,6 @@ public class LV3_Q43164 {
             path.add(START_LOC);
             dfs(tickets, START_LOC);  // 초기 index, 시작 공항명
 
-            for(String an : ans) {
-                System.out.print(an + " ");
-            }
-            System.out.println();
-
             return ans;
         }
 

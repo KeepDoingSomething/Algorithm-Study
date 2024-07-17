@@ -19,25 +19,25 @@ public class LV2_Q42587 {
 
     static class Solution {
         public int solution(int[] priorities, int location) {
-            Queue<Node> queue = new PriorityQueue<>();
-            Queue<Node> deque = new LinkedList<>();
+            Queue<Node> pQueue = new PriorityQueue<>();
+            Queue<Node> queue = new LinkedList<>();
             int ans = 1;
 
             for(int i = 0; i < priorities.length; i++) {
                 Node node = new Node(priorities[i], i);
 
+                pQueue.add(node);
                 queue.add(node);
-                deque.add(node);
             }
 
-            while(!queue.isEmpty()) {
-                Node pqNode = queue.poll();
+            while(!pQueue.isEmpty()) {
+                Node pqNode = pQueue.poll();
 
-                while(pqNode.val != deque.peek().val) {
-                    deque.add(deque.poll());
+                while(pqNode.val != queue.peek().val) {
+                    queue.add(queue.poll());
                 }
 
-                Node deqNode = deque.poll();
+                Node deqNode = queue.poll();
 
                 if(deqNode.loc == location) {
                     break;
