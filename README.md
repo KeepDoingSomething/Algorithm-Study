@@ -10,7 +10,7 @@
 |최지호|[<img src="https://avatars.githubusercontent.com/wlghsp" width="50px;">](https://github.com/wlghsp)|<span><img src="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span> <span><img src="https://img.shields.io/badge/Python-3776AB.svg?&style=for-the-badge&logo=Python&logoColor=white"/></span>|
 |김호집|[<img src="https://avatars.githubusercontent.com/Hojip-Kim" width="50px;">](https://github.com/Hojip-Kim)|<span><img src="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span> <span><img src="https://img.shields.io/badge/Python-3776AB.svg?&style=for-the-badge&logo=Python&logoColor=white"/></span><span><img src="https://img.shields.io/badge/C++-Solutions-blue.svg?style=flat&logo=c%2B%2B" /></span>|
 |윤건수|[<img src="https://avatars.githubusercontent.com/ygs3004" width="50px;">](https://github.com/ygs3004)|<span><img src="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span>|
-|전유진|[<img src="https://avatars.githubusercontent.com/jacomyou1026" width="50px;">](https://github.com/jacomyou1026)|<span><img src="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span>|
+|전유진|[<img src="https://avatars.githubusercontent.com/jacomyou0121" width="50px;">](https://github.com/jacomyou1026)|<span><img src="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span>|
 |은채|[<img src="https://avatars.githubusercontent.com/eunchae01" width="50px;">](https://github.com/eunchae01)|<span><img src="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span>|
 
 </br>
