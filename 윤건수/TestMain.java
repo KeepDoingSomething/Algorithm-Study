@@ -179,15 +179,33 @@ public class TestMain {
 
         // 프로세스 (Level 2)
         // https://school.programmers.co.kr/learn/courses/30/lessons/42587
-         programmers.setAnswer(new programmers.LV2_42587.Solution()).test();
+        //  programmers.setAnswer(new programmers.LV2_42587.Solution()).test();
 
         // 뉴스 클러스터링 (Level 2)
         // https://school.programmers.co.kr/learn/courses/30/lessons/17677
-        programmers.setAnswer(new programmers.LV2_17677.Solution()).test();
+        // programmers.setAnswer(new programmers.LV2_17677.Solution()).test();
 
-        // 여행경로 (Level 2)
+        // 여행경로 (Level 3)
         // https://school.programmers.co.kr/learn/courses/30/lessons/43164
-        programmers.setAnswer(new programmers.LV2_43164.Solution()).test();
+        // programmers.setAnswer(new programmers.LV2_43164.Solution()).test();
+
+
+
+        /*
+         * 스터디 11주차
+         * */
+
+        // 최소힙 (Silver 2)
+        // https://www.acmicpc.net/problem/1927
+        baekJoon.setAnswer(new baekjoon.S2_1927.Main()).test();
+
+        // 조이스틱 (Level 2)
+        // https://school.programmers.co.kr/learn/courses/30/lessons/42860
+        programmers.setAnswer(new programmers.LV2_42860.Solution()).test();
+
+        // 구명보트 (Level 2)
+        // https://school.programmers.co.kr/learn/courses/30/lessons/42885
+        programmers.setAnswer(new programmers.LV2_42885.Solution()).test();
     }
 
 }
