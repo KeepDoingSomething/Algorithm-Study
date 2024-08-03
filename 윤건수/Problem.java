@@ -42,9 +42,12 @@ public interface Problem<P>{
                 boolean isCaseSuccess;
                 if(NestedArrayUtil.isNestedArray(expectResult)){
                     isCaseSuccess = NestedArrayUtil.compareNestedArrays(expectResult, testResult);
-                }else {
+                }else if(expectResult.getClass().isArray()){
+                    isCaseSuccess = this.compareArray(expectResult, testResult);
+                }else{
                     isCaseSuccess = expectResult.equals(testResult);
                 }
+
 
                 isSuccess = isSuccess && isCaseSuccess;
 
@@ -80,6 +83,16 @@ public interface Problem<P>{
             e.printStackTrace();
         }
     };
+
+    private boolean compareArray(Object arr1, Object arr2) {
+        boolean result = true;
+        for(int i = 0; i < Array.getLength(arr1); i++){
+            Object arr1Element = Array.get(arr1, i);
+            Object arr2Element = Array.get(arr2, i);
+            result = result && arr1Element.equals(arr2Element);
+        }
+        return result;
+    }
 
     private void passPrintln(String str){
         // console 색상
