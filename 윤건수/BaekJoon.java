@@ -4,12 +4,13 @@ import java.net.URL;
 import java.util.Arrays;
 import java.util.HashMap;
 
-public class BaekJoon implements Problem<File, String>{
+public class BaekJoon implements Problem<File>{
 
     Object answer;
     File[] testFiles;
 
-    public Problem<File, String> setAnswer(Object answer) {
+    @Override
+    public Problem<File> setAnswer(Object answer) {
         this.answer = answer;
         URL classDir = answer.getClass().getResource("");
         try{
@@ -36,8 +37,8 @@ public class BaekJoon implements Problem<File, String>{
     }
 
     @Override
-    public HashMap<String, String> getResultCase() {
-        HashMap<String, String> result = new HashMap<>();
+    public HashMap<String, Object> getResultCase() {
+        HashMap<String, Object> result = new HashMap<>();
         try {
             Arrays.stream(testFiles)
                     .filter((file) -> file.getName().startsWith("result"))

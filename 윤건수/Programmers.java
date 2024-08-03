@@ -2,11 +2,11 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
 import java.util.HashMap;
 
-public class Programmers<R> implements Problem<Object[], R>{
+public class Programmers implements Problem<Object[]>{
 
     Object answer;
 
-    public Problem<Object[], R> setAnswer(Object answer) {
+    public Problem setAnswer(Object answer) {
         this.answer = answer;
         return this;
     }
@@ -32,9 +32,9 @@ public class Programmers<R> implements Problem<Object[], R>{
     }
 
     @Override
-    public HashMap<String, R> getResultCase() {
+    public HashMap<String, Object> getResultCase() {
 
-        HashMap<String, R> resultCase = null;
+        HashMap<String, Object> resultCase = null;
 
         try {
             String testClassName = answer.getClass().getPackage().toString().split(" ")[1] + ".TestCase";
@@ -43,7 +43,7 @@ public class Programmers<R> implements Problem<Object[], R>{
             Constructor<?> constructor = testClass.getConstructor();
             Object instance = constructor.newInstance();
 
-            resultCase = (HashMap<String, R>) testClass
+            resultCase = (HashMap<String, Object>) testClass
                     .getMethod("getResult")
                     .invoke(instance);
         } catch (Exception e) {
@@ -54,17 +54,17 @@ public class Programmers<R> implements Problem<Object[], R>{
     }
 
     @Override
-    public R solve(Object[] parameter) throws Exception {
+    public Object solve(Object[] parameter) throws Exception {
         Method[] methods = answer.getClass().getDeclaredMethods();
 
         // Solution class 변수 초기화를 위해 solve 마다 새로운 instance 생성
         Constructor constructor = answer.getClass().getConstructor();
         Object instance = constructor.newInstance();
 
-        R result = null;
+        Object result = null;
         for(Method method : methods){
             if(method.getName().equals("solution")){
-                result = (R) method.invoke(instance, parameter);
+                result = method.invoke(instance, parameter);
             }
         }
         return result;
