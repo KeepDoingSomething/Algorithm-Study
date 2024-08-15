@@ -215,15 +215,33 @@ public class TestMain {
 
         // 멀쩡한 사격형 (Level 2)
         // https://school.programmers.co.kr/learn/courses/30/lessons/62048
-        programmers.setAnswer(new programmers.LV2_62048.Solution()).test();
+        // programmers.setAnswer(new programmers.LV2_62048.Solution()).test();
 
         // 연속 부분 수열 합의 개수 (Level 2)
         // https://school.programmers.co.kr/learn/courses/30/lessons/131701
-        programmers.setAnswer(new programmers.LV2_131701.Solution()).test();
+        // programmers.setAnswer(new programmers.LV2_131701.Solution()).test();
 
         // 큰 수 만들기 (Level 2)
         // https://school.programmers.co.kr/learn/courses/30/lessons/42883
-        programmers.setAnswer(new programmers.LV2_42883.Solution()).test();
+        // programmers.setAnswer(new programmers.LV2_42883.Solution()).test();
+
+
+
+        /*
+         * 스터디 13주차
+         * */
+
+        // 석유 시추 (Level 2)
+        // https://school.programmers.co.kr/learn/courses/30/lessons/250136
+        programmers.setAnswer(new programmers.LV2_250136.Solution()).test();
+
+        // 최단경로 (Gold 4)
+        // https://www.acmicpc.net/problem/1753
+        baekJoon.setAnswer(new baekjoon.G4_1753.Main()).test();
+
+        // 물병 (Gold 5)
+        // https://www.acmicpc.net/problem/1052
+        baekJoon.setAnswer(new baekjoon.G5_1052.Main()).test();
     }
 
 }
