@@ -197,15 +197,33 @@ public class TestMain {
 
         // 최소힙 (Silver 2)
         // https://www.acmicpc.net/problem/1927
-        baekJoon.setAnswer(new baekjoon.S2_1927.Main()).test();
+        // baekJoon.setAnswer(new baekjoon.S2_1927.Main()).test();
 
         // 조이스틱 (Level 2)
         // https://school.programmers.co.kr/learn/courses/30/lessons/42860
-        programmers.setAnswer(new programmers.LV2_42860.Solution()).test();
+        // programmers.setAnswer(new programmers.LV2_42860.Solution()).test();
 
         // 구명보트 (Level 2)
         // https://school.programmers.co.kr/learn/courses/30/lessons/42885
-        programmers.setAnswer(new programmers.LV2_42885.Solution()).test();
+        // programmers.setAnswer(new programmers.LV2_42885.Solution()).test();
+
+
+
+        /*
+         * 스터디 12주차
+         * */
+
+        // 멀쩡한 사격형 (Level 2)
+        // https://school.programmers.co.kr/learn/courses/30/lessons/62048
+        programmers.setAnswer(new programmers.LV2_62048.Solution()).test();
+
+        // 연속 부분 수열 합의 개수 (Level 2)
+        // https://school.programmers.co.kr/learn/courses/30/lessons/131701
+        programmers.setAnswer(new programmers.LV2_131701.Solution()).test();
+
+        // 큰 수 만들기 (Level 2)
+        // https://school.programmers.co.kr/learn/courses/30/lessons/42883
+        programmers.setAnswer(new programmers.LV2_42883.Solution()).test();
     }
 
 }
