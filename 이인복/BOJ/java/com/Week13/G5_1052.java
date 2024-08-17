@@ -11,5 +11,23 @@ public class G5_1052 {
         StringTokenizer st = new StringTokenizer(br.readLine());
         int N = Integer.parseInt(st.nextToken());
         int K = Integer.parseInt(st.nextToken());
+        int buy = 0;
+
+        while(true) {
+            int cnt = 0;
+            int copyN = N;
+
+            while(copyN > 0) {
+                cnt += copyN % 2;
+                copyN /= 2;
+            }
+
+            if(cnt <= K) break;
+
+            N++;
+            buy++;
+        }
+
+        System.out.println(buy);
     }
 }
