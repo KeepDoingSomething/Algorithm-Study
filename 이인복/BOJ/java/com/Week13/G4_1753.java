@@ -67,6 +67,10 @@ public class G4_1753 {
         while(!queue.isEmpty()) {
             Node cur = queue.poll();
 
+            if(dist[cur.end] < cur.cost) {
+                continue;
+            }
+
             for(Node nextNode : graph[cur.end]) {
                 int newCost = dist[cur.end] + nextNode.cost;
 
