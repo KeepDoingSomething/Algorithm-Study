@@ -1,0 +1,120 @@
+package com.Week14;
+
+import java.time.Duration;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+import java.util.*;
+
+public class LV2_176962 {
+    public static void main(String[] args) {
+        Solution sol = new Solution();
+
+        String[] ans = sol.solution(new String[][]{
+                {"science", "12:40", "50"},
+                {"music", "12:20", "40"},
+                {"history", "14:00", "30"},
+                {"computer", "12:30", "100"}
+        });
+
+        /*
+            {"science", "12:40", "50"},{"music", "12:20", "40"},{"history", "14:00", "30"},{"computer", "12:30", "100"}
+            {{"korean", "11:40", "30"}, {"english", "12:10", "20"}, {"math", "12:30", "40"}}
+            {{"aaa", "12:00", "20"}, {"bbb", "12:10", "30"}, {"ccc", "12:40", "10"}}
+         */
+
+        for(String subject : ans) {
+            System.out.println(subject);
+        }
+    }
+
+    /**
+     * 1. 새로운 과제를 시작할 시각이 되었을 때, 기존에 진행 중이던 과제가 있다면 진행 중이던 과제를 멈추고 새로운 과제를 시작 합니다.
+     * 2. 진행중이던 과제를 끝냈을 때, 잠시 멈춘 과제가 있다면, 멈춰둔 과제를 이어서 진행 합니다.
+     * 3. 과제를 끝낸 시각에 새로 시작해야 되는 과제와 잠시 멈춰둔 과제가 모두 있다면, 새로 시작해야 하는 과제부터 진행합니다.
+     * 4. 멈춰둔 과제가 여러 개일 경우, 가장 최근에 멈춘 과제부터 시작합니다.
+     */
+    static class Solution {
+        public String[] solution(String[][] plans) {
+            Queue<Task> tasks = new PriorityQueue<>((a, b) -> a.srtTime.isAfter(b.srtTime) ? 1 : -1);
+            Stack<Task> pendingTasks = new Stack<>();
+            List<Task> taskEndSeq = new ArrayList<>();
+
+            for(String[] plan : plans) {
+                tasks.add(new Task(plan));
+            }
+
+            LocalDateTime curTime;
+
+            while(!tasks.isEmpty()) {
+                Task curTask = tasks.poll();
+
+                // 다음 과제가 있음 && 현재 과제가 진행중에 새로운 과제할 시간이됨
+                if(!tasks.isEmpty() && tasks.peek().srtTime.isBefore(curTask.endTime)) {
+                    Task nextTask = tasks.peek();
+                    long timeGap = curTask.getTimeGap(nextTask);
+
+                    curTask.spendTime -= timeGap;  // 과제 진행 시간 감소
+                    pendingTasks.push(curTask);  // 뒤로 미루기
+                    continue;
+                }
+
+                curTime = curTask.endTime;  // 현 과제 종료 하면서 끝나는 시간 기록
+                taskEndSeq.add(curTask);  // 과제 종료
+
+                // 임시 중지 과제 있음 && 다음 과제 있음 && 현재 시간이랑 다음 과제 시간 사이 차이가 있음
+                if(!pendingTasks.isEmpty() && !tasks.isEmpty() && curTime.isBefore(tasks.peek().srtTime)) {
+                    Task nextTask = tasks.peek();
+                    Task pendingTask = pendingTasks.peek();
+                    long timeGap = Duration.between(curTime, nextTask.srtTime).toMinutes();
+
+                    while(timeGap >= 0) {
+                        if(pendingTask.spendTime <= timeGap) {
+                            timeGap -= pendingTask.spendTime;
+                            curTime = pendingTasks.peek().endTime;
+                            taskEndSeq.add(pendingTasks.pop());
+
+                            if(pendingTasks.isEmpty()) break;
+
+                            pendingTask = pendingTasks.peek();
+                        } else {
+                            pendingTask.spendTime -= timeGap;
+                            break;
+                        }
+                    }
+                }
+            }
+
+            while(!pendingTasks.isEmpty()) {
+                taskEndSeq.add(pendingTasks.pop());
+            }
+
+            return taskEndSeq.stream().map(Task::getSubject).toArray(String[]::new);
+        }
+    }
+
+    static class Task {
+        final String subject;
+        LocalDateTime srtTime;
+        LocalDateTime endTime;
+        int spendTime;
+
+        public Task(String[] info) {
+            this.subject = info[0];
+            this.spendTime = Integer.parseInt(info[2]);
+
+            Integer[] time = Arrays.stream(info[1].split(":")).map(Integer::parseInt).toArray(Integer[]::new);
+
+            this.srtTime = LocalDateTime.of(LocalDate.now(), LocalTime.of(time[0], time[1]));
+            this.endTime = this.srtTime.plusMinutes(this.spendTime);
+        }
+
+        public String getSubject() {
+            return subject;
+        }
+
+        public long getTimeGap(Task task) {
+            return Duration.between(this.srtTime, task.srtTime).toMinutes();  // (현)과제와 (새)과제 시간차
+        }
+    }
+}
