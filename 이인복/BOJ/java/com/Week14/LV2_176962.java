@@ -66,18 +66,18 @@ public class LV2_176962 {
                 if(!pendingTasks.isEmpty() && !tasks.isEmpty() && curTime.isBefore(tasks.peek().srtTime)) {
                     Task nextTask = tasks.peek();
                     Task pendingTask = pendingTasks.peek();
-                    long timeGap = Duration.between(curTime, nextTask.srtTime).toMinutes();
+                    long timeGap = Duration.between(curTime, nextTask.srtTime).toMinutes();  // 현재 시간과 다음 시작 과제의 시간차이
 
-                    while(timeGap >= 0) {
-                        if(pendingTask.spendTime <= timeGap) {
-                            timeGap -= pendingTask.spendTime;
-                            curTime = pendingTasks.peek().endTime;
+                    while(timeGap >= 0) {  // 다음 시작 과제 시간전 여유 시간이 있을 때
+                        if(pendingTask.spendTime <= timeGap) {  // 여유 시간으로 과제를 끝낼 수 있을 때
+                            timeGap -= pendingTask.spendTime;  // 사용한 여유 시간 감소
+                            curTime = pendingTasks.peek().endTime;  // 현재 시간 갱신
                             taskEndSeq.add(pendingTasks.pop());
 
                             if(pendingTasks.isEmpty()) break;
 
                             pendingTask = pendingTasks.peek();
-                        } else {
+                        } else {  // 여유 시간으로 끝낼 수 없을 때 시간만 감소
                             pendingTask.spendTime -= timeGap;
                             break;
                         }
