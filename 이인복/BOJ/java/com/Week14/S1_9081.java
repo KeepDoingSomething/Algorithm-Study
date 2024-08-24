@@ -3,7 +3,8 @@ package com.Week14;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.*;
+import java.util.Arrays;
+import java.util.stream.Collectors;
 
 public class S1_9081 {
     public static void main(String[] args) throws IOException {
@@ -12,37 +13,34 @@ public class S1_9081 {
         int T = Integer.parseInt(br.readLine());
 
         for(int i = 0; i < T; i++) {
-            String word = br.readLine();
-            String[] wordArr = word.split("");
-            Queue<String> pQueue = backtracking(wordArr, new HashSet<>(), new boolean[wordArr.length], new StringBuilder());
+            String[] word = br.readLine().split("");
 
-            while(!pQueue.isEmpty()) {
-                if(pQueue.poll().equals(word)) {
-                    String ansWord = pQueue.poll();
+            NESTED_LOOP:
+            for(int j = word.length - 1; j > 0; j--) {
+                for(int k = j - 1; k >= 0; k--) {
+                    if(word[j].compareTo(word[k]) > 0) {
+                        String temp = word[j];
+                        word[j] = word[k];
+                        word[k] = temp;
 
-                    sb.append(Objects.isNull(ansWord) ? word : ansWord).append(System.lineSeparator());
+                        Arrays.sort(word, k + 1, word.length);
+                        break NESTED_LOOP;
+                    }
                 }
             }
+
+            sb.append(Arrays.stream(word).collect(Collectors.joining("")))
+              .append(System.lineSeparator());
         }
 
-        System.out.println(sb);
-    }
-
-    public static PriorityQueue<String> backtracking(String[] word, Set<String> wordSet, boolean[] visited, StringBuilder sb) {
-        if(sb.length() == word.length) {
-            wordSet.add(sb.toString());
-        }
-
-        for(int i = 0; i < word.length; i++) {
-            if(!visited[i]) {
-                visited[i] = true;
-                sb.append(word[i]);
-                backtracking(word, wordSet, visited, sb);
-                sb.deleteCharAt(sb.length() - 1);
-                visited[i] = false;
-            }
-        }
-
-        return new PriorityQueue<>(wordSet);
+        System.out.print(sb);
     }
 }
+
+/*
+ABCDE FGHIJ KLMNO PQRST UVWXY Z
+
+1
+SHUTT => 19 8 21 20 20
+STHTU => 19 20 8 20 21
+ */
