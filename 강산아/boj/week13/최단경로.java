@@ -6,6 +6,11 @@
  * Algorithm : Greedy Algorithm, Dijkstra
  */
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.PriorityQueue;
+import java.util.Scanner;
+
 class Edge implements Comparable<Edge>{
     public int vex;
     public int cost;
@@ -76,5 +81,5 @@ public class Main {
             if (dis[i]!= Integer.MAX_VALUE) System.out.println(dis[i]);
             else System.out.println("INF");
         }
-    };
+    }
 }
