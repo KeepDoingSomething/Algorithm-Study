@@ -124,14 +124,5 @@ public class LV2_172927 {
 
             return diaRes;
         }
-
-        @Override
-        public String toString() {
-            return "Mass{" +
-                    "dia=" + dia +
-                    ", iro=" + iro +
-                    ", sto=" + sto +
-                    '}';
-        }
     }
 }
