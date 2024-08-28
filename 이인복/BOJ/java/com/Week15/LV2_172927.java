@@ -107,19 +107,13 @@ public class LV2_172927 {
 
         @Override
         public int compareTo(Mass mass) {
-            int diaRes = mass.dia - this.dia;
+            int diaRes = Integer.compare(mass.dia, this.dia);
+            if(diaRes != 0) return diaRes;
 
-            if(diaRes == 0) {
-                int ironRes = mass.iro - this.iro;
+            int ironRes = Integer.compare(mass.iro, this.iro);
+            if(ironRes != 0) return ironRes;
 
-                if(ironRes == 0) {
-                    return mass.sto - this.sto;
-                }
-
-                return ironRes;
-            }
-
-            return diaRes;
+            return Integer.compare(mass.sto, this.sto);
         }
     }
 }
