@@ -48,7 +48,7 @@ public class LV2_172927 {
             int sto = 0;
 
             for(String mineral : minerals) {
-                if(totalPick == 0) break;
+                if(totalPick == 0) break;  // 곡괭이 숫자가 부족하면 광물은 남았어도 더 이상 집계하지 않음
 
                 switch(mineral.charAt(0)) {
                     case 'd': dia++; break;
@@ -59,7 +59,7 @@ public class LV2_172927 {
 
                 cnt++;
 
-                if(cnt == 5) {
+                if(cnt == 5) {  // 5개를 하나로 묶음
                     masses.add(new Mass(dia, iro, sto));
                     cnt = 0;
                     dia = 0;
@@ -69,8 +69,8 @@ public class LV2_172927 {
                 }
             }
 
-            if(totalPick != 0 && (dia != 0 || iro != 0 || sto != 0)) {
-                masses.add(new Mass(dia, iro, sto));  // 5 개 묶음이 아닌 케이스
+            if(totalPick != 0 && (dia != 0 || iro != 0 || sto != 0)) {  // 5 개 묶음이 아닌 케이스
+                masses.add(new Mass(dia, iro, sto));
             }
 
             return masses.stream().sorted(Mass::compareTo).collect(Collectors.toList());
@@ -78,9 +78,6 @@ public class LV2_172927 {
     }
 
     static class Mass implements Comparable<Mass>{
-        private final int DIAMOND = 25;
-        private final int IRON = 5;
-        private final int STONE = 1;
         int dia;
         int iro;
         int sto;
@@ -92,9 +89,9 @@ public class LV2_172927 {
         }
 
         public int getFatigue(int pick) {
-            return calcEachFatigue(pick, dia, DIAMOND) +
-                   calcEachFatigue(pick, iro, IRON) +
-                   calcEachFatigue(pick, sto, STONE);
+            return calcEachFatigue(pick, dia, 25) +
+                   calcEachFatigue(pick, iro, 5) +
+                   calcEachFatigue(pick, sto, 1);
         }
 
         public int calcEachFatigue(int pick, int mineral, int value) {
