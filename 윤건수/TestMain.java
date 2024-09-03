@@ -253,7 +253,7 @@ public class TestMain {
 
         // 과제 진행하기 (Level 2)
         // https://school.programmers.co.kr/learn/courses/30/lessons/176962
-        // * programmers.setAnswer(new programmers.LV2_176962.Solution()).test();
+        // programmers.setAnswer(new programmers.LV2_176962.Solution()).test();
 
         // 단어 맞추기 (Silver 1)
         // https://www.acmicpc.net/problem/9081
@@ -265,8 +265,9 @@ public class TestMain {
          * 스터디 15주차
          * */
 
-        // 기둥과 보 설치 (Level 2)
-        // * https://school.programmers.co.kr/learn/courses/30/lessons/60061
+        // 기둥과 보 설치 (Level 3)
+        // https://school.programmers.co.kr/learn/courses/30/lessons/60061
+        programmers.setAnswer(new programmers.LV3_60061.Solution()).test();
 
         // 두 큐 합 같게 만들기 (Level 2)
         // https://school.programmers.co.kr/learn/courses/30/lessons/118667
@@ -291,7 +292,7 @@ public class TestMain {
 
         // 다리를 지나는 트럭 (Level 2)
         // https://school.programmers.co.kr/learn/courses/30/lessons/42583
-        programmers.setAnswer(new programmers.LV2_42583.Solution()).test();
+        // programmers.setAnswer(new programmers.LV2_42583.Solution()).test();
 
     }
 
