@@ -6,7 +6,7 @@
  * Algorithm : Queue - LV2_42583 다리를 지나는 트럭
  */
 
-package Queue;
+package queue;
 
 import java.util.LinkedList;
 import java.util.Queue;

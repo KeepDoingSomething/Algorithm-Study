@@ -1,5 +1,3 @@
-package DFS_BFS;
-
 /**
  * Author    : 김현정
  * Date      : 2024.09.05(목)
@@ -7,6 +5,9 @@ package DFS_BFS;
  * Memory    :
  * Algorithm : DFS&BFS - LV3_43162 네트워크
  */
+
+package dfs_bfs;
+
 class Solution {
     public int solution(int n, int[][] computers) {
         int answer = 0;
