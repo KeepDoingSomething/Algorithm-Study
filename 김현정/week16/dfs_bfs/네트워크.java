@@ -3,7 +3,7 @@
  * Date      : 2024.09.05(목)
  * Runtime   :
  * Memory    :
- * Algorithm : DFS&BFS - LV3_43162 네트워크
+ * Algorithm : [programmers]DFS&BFS - LV3_43162 네트워크
  */
 
 package dfs_bfs;

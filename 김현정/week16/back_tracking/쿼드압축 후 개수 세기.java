@@ -5,7 +5,7 @@ package back_tracking;
  * Date      : 2024.09.05(목)
  * Runtime   :
  * Memory    :
- * Algorithm : 백트래킹 - LV2_68936 쿼드 압축 후 세기
+ * Algorithm : [programmers]백트래킹 - LV2_68936 쿼드 압축 후 세기
  */
 class Solution {
     public static void main(String[] args) {

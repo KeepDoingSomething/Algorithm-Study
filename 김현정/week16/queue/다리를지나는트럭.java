@@ -3,7 +3,7 @@
  * Date      : 2024.09.05(목)
  * Runtime   :
  * Memory    :
- * Algorithm : Queue - LV2_42583 다리를 지나는 트럭
+ * Algorithm : [programmers]Queue - LV2_42583 다리를 지나는 트럭
  */
 
 package queue;
