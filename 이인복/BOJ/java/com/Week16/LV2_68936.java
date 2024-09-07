@@ -32,6 +32,7 @@ public class LV2_68936 {
                 for(int j = y; j < y + size; j++) {
                     if(arr[x][y] != arr[i][j]) {
                         isMergeable = false;
+                        break;
                     }
                 }
             }
