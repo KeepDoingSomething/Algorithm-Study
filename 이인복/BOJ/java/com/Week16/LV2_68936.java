@@ -28,11 +28,12 @@ public class LV2_68936 {
         public void dividAndSum(int[][] arr, int x, int y, int size) {
             boolean isMergeable = true;
 
+            LOOP:
             for(int i = x; i < x + size; i++) {
                 for(int j = y; j < y + size; j++) {
                     if(arr[x][y] != arr[i][j]) {
                         isMergeable = false;
-                        break;
+                        break LOOP;
                     }
                 }
             }
