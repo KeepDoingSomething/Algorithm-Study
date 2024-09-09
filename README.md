@@ -42,19 +42,19 @@
 /**
 * Author    : Lee In Bok
 * Date      : 2024.01.01(Mon)
-* Runtime   : 58612 KB
-* Memory    : 712 ms
+* Runtime   : 712 ms  -> 프로그래머스의 경우 가장 안좋은 케이스를 넣어 주세요
+* Memory    : 58612 KB  -> 프로그래머스의 경우 가장 안좋은 케이스를 넣어 주세요
 * Algorithm : Binary Search
  */
 ```
 
-[ Python ]
+[ Python (2024.09.10 기준 사용 x) ]
 ```python
 '''
 Author    : Lee In Bok
 Date      : 2024.01.01(Mon)
-Runtime   : 42352 KB
-Memory    : 816 ms
+Runtime   : 816 ms
+Memory    : 42352 KB
 Algorithm : Binary Search
 '''
 
