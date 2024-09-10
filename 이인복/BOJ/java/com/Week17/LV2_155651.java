@@ -1,8 +1,8 @@
 /**
  * Author    : Lee In Bok
  * Date      : 2024.09.10(Tue)
- * Runtime   : 57.37ms
- * Memory    : 107MB
+ * Runtime   : 42.28ms
+ * Memory    : 105MB
  * Algorithm : Priority Queue
  */
 
@@ -37,7 +37,6 @@ public class LV2_155651 {
 
             while(!waitingQ.isEmpty()) {
                 Customer cus = waitingQ.poll();
-                System.out.println("cus = " + cus);
 
                 // 사용중인 호텔방 존재 && (체크인과 체크아웃 동시간 || 현 고객 체크인 시간보다 늦은 체크 아웃방)
                 while(!roomQ.isEmpty() && (roomQ.peek().endTime.equals(cus.srtTime) || cus.srtTime.isAfter(roomQ.peek().endTime))) {
