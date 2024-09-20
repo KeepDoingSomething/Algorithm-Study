@@ -16,14 +16,7 @@ public class 리코쳇로봇 {
     static  int col,row;
     int[]dx = {-1,1,0,0};
     int[]dy = {0,0,-1,1};
-
-    /**
-     *  ...D..R
-     *  .D.G...
-     *  ....D.D
-     *  D....D.
-     *  ..D....
-     */
+    
     public int solution(String[] board) {
         col = board.length;
         row = board[0].length();
