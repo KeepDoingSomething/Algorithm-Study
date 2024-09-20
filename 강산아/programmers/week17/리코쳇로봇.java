@@ -1,3 +1,10 @@
+/**
+ * Author    : Kang San Ah
+ * Date      : 2024.09.20(Fri)
+ * Runtime   : 1 sec
+ * Memory    : 256 MB
+ * Algorithm : BFS
+ */
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -16,7 +23,7 @@ public class 리코쳇로봇 {
     static  int col,row;
     int[]dx = {-1,1,0,0};
     int[]dy = {0,0,-1,1};
-    
+
     public int solution(String[] board) {
         col = board.length;
         row = board[0].length();
