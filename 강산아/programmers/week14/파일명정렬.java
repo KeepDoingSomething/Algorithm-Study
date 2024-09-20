@@ -1,4 +1,10 @@
-package programmers.week14;
+/**
+ * Author    : Kang San Ah
+ * Date      : 2024.08.23(Fri)
+ * Runtime   : 1 sec
+ * Memory    : 256 MB
+ * Algorithm : Array
+ */
 
 import java.util.Arrays;
 import java.util.Comparator;

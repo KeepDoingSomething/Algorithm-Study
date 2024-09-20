@@ -1,4 +1,10 @@
-package programmers.week17;
+/**
+ * Author    : Kang San Ah
+ * Date      : 2024.09.16(Mon)
+ * Runtime   : 1 sec
+ * Memory    : 256 MB
+ * Algorithm : Array
+ */
 
 import java.util.Arrays;
 
