@@ -267,7 +267,7 @@ public class TestMain {
 
         // 기둥과 보 설치 (Level 3)
         // https://school.programmers.co.kr/learn/courses/30/lessons/60061
-        programmers.setAnswer(new programmers.LV3_60061.Solution()).test();
+        // programmers.setAnswer(new programmers.LV3_60061.Solution()).test();
 
         // 두 큐 합 같게 만들기 (Level 2)
         // https://school.programmers.co.kr/learn/courses/30/lessons/118667
@@ -293,6 +293,24 @@ public class TestMain {
         // 다리를 지나는 트럭 (Level 2)
         // https://school.programmers.co.kr/learn/courses/30/lessons/42583
         // programmers.setAnswer(new programmers.LV2_42583.Solution()).test();
+
+
+
+        /*
+         * 스터디 17주차
+         * */
+
+        // 리코쳇 로봇 (Level 2)
+        // https://school.programmers.co.kr/learn/courses/30/lessons/169199
+        programmers.setAnswer(new programmers.LV2_169199.Solution()).test();
+
+        // 가장 큰 수(Level 2)
+        // https://school.programmers.co.kr/learn/courses/30/lessons/42746
+        programmers.setAnswer(new programmers.LV2_42746.Solution()).test();
+
+        // 다리를 지나는 트럭 (Level 2)
+        // https://school.programmers.co.kr/learn/courses/30/lessons/155651
+        programmers.setAnswer(new programmers.LV2_155651.Solution()).test();
 
     }
 
