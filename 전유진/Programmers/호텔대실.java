@@ -43,7 +43,6 @@ public class 호텔대실 {
             } else {
                 int[] temp = pq.peek();
                 int end = temp[1];
-
                 if(book[0] >= end) pq.poll();
                 pq.add(book);
             }
