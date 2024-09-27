@@ -1,11 +1,17 @@
-package programmers.week14;
+/**
+ * Author    : Kang San Ah
+ * Date      : 2024.08.23(Fri)
+ * Runtime   : 1 sec
+ * Memory    : 256 MB
+ * Algorithm : Array
+ */
 
 import java.util.Arrays;
 import java.util.Comparator;
 
 public class 파일명정렬 {
 
-    public String[] solution(String[] files) {
+    public static String[] solution(String[] files) {
         Arrays.sort(files, new Comparator<String>() {
             @Override
             public int compare(String o1, String o2) {
@@ -49,5 +55,4 @@ public class 파일명정렬 {
 
         return sb.toString();
     }
-
 }

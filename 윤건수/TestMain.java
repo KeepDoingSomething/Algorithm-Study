@@ -1,5 +1,3 @@
-import programmers.LV2_42587.Solution;
-
 public class TestMain {
 
     public static void main(String[] args) throws Exception {
@@ -233,15 +231,87 @@ public class TestMain {
 
         // 석유 시추 (Level 2)
         // https://school.programmers.co.kr/learn/courses/30/lessons/250136
-        programmers.setAnswer(new programmers.LV2_250136.Solution()).test();
+        // programmers.setAnswer(new programmers.LV2_250136.Solution()).test();
 
         // 최단경로 (Gold 4)
         // https://www.acmicpc.net/problem/1753
-        baekJoon.setAnswer(new baekjoon.G4_1753.Main()).test();
+        // baekJoon.setAnswer(new baekjoon.G4_1753.Main()).test();
 
         // 물병 (Gold 5)
         // https://www.acmicpc.net/problem/1052
-        baekJoon.setAnswer(new baekjoon.G5_1052.Main()).test();
+        // baekJoon.setAnswer(new baekjoon.G5_1052.Main()).test();
+
+
+
+        /*
+         * 스터디 14주차
+         * */
+
+        // 파일명 정렬 (Level 2)
+        // https://school.programmers.co.kr/learn/courses/30/lessons/17686
+        // programmers.setAnswer(new programmers.LV2_17686.Solution()).test();
+
+        // 과제 진행하기 (Level 2)
+        // https://school.programmers.co.kr/learn/courses/30/lessons/176962
+        // programmers.setAnswer(new programmers.LV2_176962.Solution()).test();
+
+        // 단어 맞추기 (Silver 1)
+        // https://www.acmicpc.net/problem/9081
+        // baekJoon.setAnswer(new baekjoon.S1_9081.Main()).test();
+
+
+
+        /*
+         * 스터디 15주차
+         * */
+
+        // 기둥과 보 설치 (Level 3)
+        // https://school.programmers.co.kr/learn/courses/30/lessons/60061
+        // programmers.setAnswer(new programmers.LV3_60061.Solution()).test();
+
+        // 두 큐 합 같게 만들기 (Level 2)
+        // https://school.programmers.co.kr/learn/courses/30/lessons/118667
+        // programmers.setAnswer(new programmers.LV2_118867.Solution()).test();
+
+        // 광물 캐기 (Level 2)
+        // https://school.programmers.co.kr/learn/courses/30/lessons/172927
+        // programmers.setAnswer(new programmers.LV2_172927.Solution()).test();
+
+
+        /*
+         * 스터디 16주차
+         * */
+
+        // 네트워크 (Level 3)
+        // https://school.programmers.co.kr/learn/courses/30/lessons/43162
+        // programmers.setAnswer(new programmers.LV3_43162.Solution()).test();
+
+        // 쿼드 압축 후 세기(Level 2)
+        // https://school.programmers.co.kr/learn/courses/30/lessons/68936
+        // programmers.setAnswer(new programmers.LV2_68936.Solution()).test();
+
+        // 다리를 지나는 트럭 (Level 2)
+        // https://school.programmers.co.kr/learn/courses/30/lessons/42583
+        // programmers.setAnswer(new programmers.LV2_42583.Solution()).test();
+
+
+
+        /*
+         * 스터디 17주차
+         * */
+
+        // 리코쳇 로봇 (Level 2)
+        // https://school.programmers.co.kr/learn/courses/30/lessons/169199
+        programmers.setAnswer(new programmers.LV2_169199.Solution()).test();
+
+        // 가장 큰 수(Level 2)
+        // https://school.programmers.co.kr/learn/courses/30/lessons/42746
+        programmers.setAnswer(new programmers.LV2_42746.Solution()).test();
+
+        // 다리를 지나는 트럭 (Level 2)
+        // https://school.programmers.co.kr/learn/courses/30/lessons/155651
+        programmers.setAnswer(new programmers.LV2_155651.Solution()).test();
+
     }
 
 }
