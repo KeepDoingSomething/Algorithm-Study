@@ -319,11 +319,11 @@ public class TestMain {
 
         // 운동(Gold 4)
         // https://www.acmicpc.net/problem/1956
-        // baekJoon.setAnswer(new baekjoon.G4_1956.Main()).test();
+        baekJoon.setAnswer(new baekjoon.G4_1956.Main()).test();
 
         // 맥주 마시면서 걸어가기 (Gold 5)
         // https://www.acmicpc.net/problem/9205
-        // baekJoon.setAnswer(new baekjoon.G5_9205.Main()).test();
+        baekJoon.setAnswer(new baekjoon.G5_9205.Main()).test();
 
         // 방금 그 곡 (Level 2)
         // https://school.programmers.co.kr/learn/courses/30/lessons/17683
