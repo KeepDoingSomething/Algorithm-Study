@@ -302,15 +302,32 @@ public class TestMain {
 
         // 리코쳇 로봇 (Level 2)
         // https://school.programmers.co.kr/learn/courses/30/lessons/169199
-        programmers.setAnswer(new programmers.LV2_169199.Solution()).test();
+        // programmers.setAnswer(new programmers.LV2_169199.Solution()).test();
 
         // 가장 큰 수(Level 2)
         // https://school.programmers.co.kr/learn/courses/30/lessons/42746
-        programmers.setAnswer(new programmers.LV2_42746.Solution()).test();
+        // programmers.setAnswer(new programmers.LV2_42746.Solution()).test();
 
         // 다리를 지나는 트럭 (Level 2)
         // https://school.programmers.co.kr/learn/courses/30/lessons/155651
-        programmers.setAnswer(new programmers.LV2_155651.Solution()).test();
+        // programmers.setAnswer(new programmers.LV2_155651.Solution()).test();
+
+
+        /*
+         * 스터디 18주차
+         * */
+
+        // 운동(Gold 4)
+        // https://www.acmicpc.net/problem/1956
+        baekJoon.setAnswer(new baekjoon.G4_1956.Main()).test();
+
+        // 맥주 마시면서 걸어가기 (Gold 5)
+        // https://www.acmicpc.net/problem/9205
+        baekJoon.setAnswer(new baekjoon.G5_9205.Main()).test();
+
+        // 방금 그 곡 (Level 2)
+        // https://school.programmers.co.kr/learn/courses/30/lessons/17683
+        programmers.setAnswer(new programmers.LV2_17683.Solution()).test();
 
     }
 
