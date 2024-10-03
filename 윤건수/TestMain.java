@@ -11,11 +11,11 @@ public class TestMain {
 
         // 후보키 (Level 2)
         // https://school.programmers.co.kr/learn/courses/30/lessons/42890
-        programmers.setAnswer(new programmers.LV2_42890.Solution()).test();
+        // programmers.setAnswer(new programmers.LV2_42890.Solution()).test();
 
         // Z (Gold 5)
         // https://www.acmicpc.net/problem/1074
-        // baekJoon.setAnswer(new baekjoon.G5_1074.Main()).test();
+        baekJoon.setAnswer(new baekjoon.G5_1074.Main()).test();
 
         // 구간 나누기 2 (Gold 4)
         // https://www.acmicpc.net/problem/13397
