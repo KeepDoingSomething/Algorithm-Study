@@ -1,3 +1,5 @@
+import baekjoon.G4_13397.MainFail;
+
 public class TestMain {
 
     public static void main(String[] args) throws Exception {
@@ -11,7 +13,7 @@ public class TestMain {
 
         // 후보키 (Level 2)
         // https://school.programmers.co.kr/learn/courses/30/lessons/42890
-        // programmers.setAnswer(new programmers.LV2_42890.Solution()).test();
+        programmers.setAnswer(new programmers.LV2_42890.Solution()).test();
 
         // Z (Gold 5)
         // https://www.acmicpc.net/problem/1074
@@ -19,7 +21,7 @@ public class TestMain {
 
         // 구간 나누기 2 (Gold 4)
         // https://www.acmicpc.net/problem/13397
-        // baekJoon.setAnswer(new baekjoon.G4_13397.Main()).test();
+        baekJoon.setAnswer(new baekjoon.G4_13397.Main()).test();
 
         /*
          * 스터디 18주차
