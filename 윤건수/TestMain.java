@@ -14,6 +14,11 @@ public class TestMain {
         // 색칠하기 (Gold 5)
         // https://www.acmicpc.net/problem/13265
         baekJoon.setAnswer(new baekjoon.G5_13265.Main()).test();
+        // 색칠하기 (Gold 5)
+        // https://www.acmicpc.net/problem/13265
+        programmers.setAnswer(new programmers.LV2_12980.Solution()).test();
+
+
 
         /*
          * 스터디 19주차
