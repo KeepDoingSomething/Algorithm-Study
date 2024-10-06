@@ -1,8 +1,8 @@
 /**
  * Author    : Lee In Bok
  * Date      : 2024.10.06(Sun)
- * Runtime   : 584ms
- * Memory    : 141372KB
+ * Runtime   : 584 ms
+ * Memory    : 141372 KB
  * Algorithm : Graph Search
  */
 
