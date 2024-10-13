@@ -1,11 +1,10 @@
-import baekjoon.G4_13397.MainFail;
-
 public class TestMain {
 
     public static void main(String[] args) throws Exception {
 
         BaekJoon baekJoon = new BaekJoon();
         Programmers programmers = new Programmers();
+        Leetcode leetcode = new Leetcode();
 
         /*
          * 스터디 20주차
@@ -13,7 +12,15 @@ public class TestMain {
 
         // 색칠하기 (Gold 5)
         // https://www.acmicpc.net/problem/13265
-        baekJoon.setAnswer(new baekjoon.G5_13265.Main()).test();
+        // baekJoon.setAnswer(new baekjoon.G5_13265.Main()).test();
+
+        // 점프와 순간이동 (Level 2)
+        // https://school.programmers.co.kr/learn/courses/30/lessons/12980
+        // programmers.setAnswer(new programmers.LV2_12980.Solution()).test();
+
+        // Longest Palindromic Substring
+        // https://leetcode.com/problems/longest-palindromic-substring/
+        leetcode.setSolutionMethodName("longestPalindrome").setAnswer(new leetcode.M_longestPalindromicSubstring.Solution()).test();
 
         /*
          * 스터디 19주차
