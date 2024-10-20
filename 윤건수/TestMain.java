@@ -7,7 +7,23 @@ public class TestMain {
         Leetcode leetcode = new Leetcode();
 
         /*
-         * 스터디 20주차
+         * 스터디 22주차
+         * */
+
+        // 벽 부수고 이동하기 4 (Gold 2)
+        // https://www.acmicpc.net/problem/16946
+        baekJoon.setAnswer(new baekjoon.G2_16946.Main()).test();
+
+        // 텀 프로젝트 (Gold 3)
+        // https://www.acmicpc.net/problem/9466
+        baekJoon.setAnswer(new baekjoon.G3_9466.Main()).test();
+
+        // 주식가격 (Level 2)
+        // https://school.programmers.co.kr/learn/courses/30/lessons/42584
+        programmers.setAnswer(new programmers.LV2_42584.Solution()).test();
+
+        /*
+         * 스터디 21주차
          * */
 
         // 색칠하기 (Gold 5)
@@ -20,7 +36,7 @@ public class TestMain {
 
         // Longest Palindromic Substring
         // https://leetcode.com/problems/longest-palindromic-substring/
-        leetcode.setSolutionMethodName("longestPalindrome").setAnswer(new leetcode.M_longestPalindromicSubstring.Solution()).test();
+        // leetcode.setSolutionMethodName("longestPalindrome").setAnswer(new leetcode.M_longestPalindromicSubstring.Solution()).test();
 
         /*
          * 스터디 19주차
