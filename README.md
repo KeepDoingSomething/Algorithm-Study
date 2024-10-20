@@ -147,4 +147,5 @@ Remove: 파일, 폴더 삭제
 |09.23 - 09.29|[Week18](https://github.com/KeepDoingSomething/Algorithm-Study/issues/112)|
 |09.30 - 10.06|[Week19](https://github.com/KeepDoingSomething/Algorithm-Study/issues/116)|
 |10.07 - 10.13|[Week20](https://github.com/KeepDoingSomething/Algorithm-Study/issues/119)|
-
+|10.14 - 10.20|[Week21](https://github.com/KeepDoingSomething/Algorithm-Study/issues/123)|
+|10.21 - 10.27|[Week22](https://github.com/KeepDoingSomething/Algorithm-Study/issues/127)|
