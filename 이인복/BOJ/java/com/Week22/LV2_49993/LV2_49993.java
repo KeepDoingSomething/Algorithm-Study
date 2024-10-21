@@ -1,3 +1,11 @@
+/**
+ * Author    : Lee In Bok
+ * Date      : 2024.10.21(Mon)
+ * Runtime   : 2.84ms
+ * Memory    : 78.9MB
+ * Algorithm : String
+ */
+
 package com.Week22.LV2_49993;
 
 import java.util.Arrays;
