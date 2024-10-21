@@ -7,7 +7,7 @@ public class TestMain {
         Leetcode leetcode = new Leetcode();
 
         /*
-         * 스터디 23주차
+         * 스터디 22주차
          * */
 
         // N-Queen (Level 2)
@@ -23,7 +23,7 @@ public class TestMain {
         baekJoon.setAnswer(new baekjoon.G4_1806.Main()).test();
 
         /*
-         * 스터디 22주차
+         * 스터디 21주차
          * */
 
         // 벽 부수고 이동하기 4 (Gold 2)
@@ -39,7 +39,7 @@ public class TestMain {
         // programmers.setAnswer(new programmers.LV2_42584.Solution()).test();
 
         /*
-         * 스터디 21주차
+         * 스터디 20주차
          * */
 
         // 색칠하기 (Gold 5)
