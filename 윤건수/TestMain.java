@@ -10,20 +10,36 @@ public class TestMain {
          * 스터디 22주차
          * */
 
-        // 벽 부수고 이동하기 4 (Gold 2)
-        // https://www.acmicpc.net/problem/16946
-        baekJoon.setAnswer(new baekjoon.G2_16946.Main()).test();
+        // N-Queen (Level 2)
+        // https://school.programmers.co.kr/learn/courses/30/lessons/12952
+        programmers.setAnswer(new programmers.LV2_12952.Solution()).test();
 
-        // 텀 프로젝트 (Gold 3)
-        // https://www.acmicpc.net/problem/9466
-        baekJoon.setAnswer(new baekjoon.G3_9466.Main()).test();
+        // 스킬트리 (Level 2)
+        // https://school.programmers.co.kr/learn/courses/30/lessons/49993
+        programmers.setAnswer(new programmers.LV2_49993.Solution()).test();
 
-        // 주식가격 (Level 2)
-        // https://school.programmers.co.kr/learn/courses/30/lessons/42584
-        programmers.setAnswer(new programmers.LV2_42584.Solution()).test();
+        // 부분합 (Gold 4)
+        // https://www.acmicpc.net/problem/1806
+        baekJoon.setAnswer(new baekjoon.G4_1806.Main()).test();
 
         /*
          * 스터디 21주차
+         * */
+
+        // 벽 부수고 이동하기 4 (Gold 2)
+        // https://www.acmicpc.net/problem/16946
+        // baekJoon.setAnswer(new baekjoon.G2_16946.Main()).test();
+
+        // 텀 프로젝트 (Gold 3)
+        // https://www.acmicpc.net/problem/9466
+        // baekJoon.setAnswer(new baekjoon.G3_9466.Main()).test();
+
+        // 주식가격 (Level 2)
+        // https://school.programmers.co.kr/learn/courses/30/lessons/42584
+        // programmers.setAnswer(new programmers.LV2_42584.Solution()).test();
+
+        /*
+         * 스터디 20주차
          * */
 
         // 색칠하기 (Gold 5)
