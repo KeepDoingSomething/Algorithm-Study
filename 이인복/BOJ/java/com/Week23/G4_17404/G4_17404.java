@@ -1,3 +1,11 @@
+/**
+ * Author    : Lee In Bok
+ * Date      : 2024.11.03(Sun)
+ * Runtime   : 136 ms
+ * Memory    : 15812 KB
+ * Algorithm : Dynamic Programming
+ */
+
 package com.Week23.G4_17404;
 
 import java.io.BufferedReader;
