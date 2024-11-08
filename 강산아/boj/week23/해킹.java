@@ -6,9 +6,6 @@
  * Algorithm : 다익스트라
  */
 
-
-
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -54,15 +51,13 @@ public class 해킹 {
                 graph.add(new ArrayList<>());
             }
 
-            // 각 의존성을 나타내는 정수 a, b, s
-            // 컴퓨터 a가 컴퓨터 b를 의존하며, 컴퓨터 b가 감염되면 s초 후 컴퓨터 a도 감염됨
+
             for (int i = 0; i < d; i++) {
                 st = new StringTokenizer(br.readLine());
                 int a = Integer.parseInt(st.nextToken());
                 int b = Integer.parseInt(st.nextToken());
                 int s = Integer.parseInt(st.nextToken());
 
-                // 따라서 b에서 출발하여 도착하는 지점과 비용을 그래프에 담는다.
                 graph.get(b).add(new Node(a, s));
             }
 
