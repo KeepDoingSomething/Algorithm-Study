@@ -1,3 +1,5 @@
+import baekjoon.G4_17404.MainDfs;
+
 public class TestMain {
 
     public static void main(String[] args) throws Exception {
@@ -21,6 +23,10 @@ public class TestMain {
         // 아기상어 (Gold 3)
         // https://www.acmicpc.net/problem/16236
         baekJoon.setAnswer(new baekjoon.G3_16236.Main()).test();
+
+        // 해킹 (Gold 4)
+        // https://www.acmicpc.net/problem/10282
+        baekJoon.setAnswer(new baekjoon.G4_10282.Main()).test();
 
         /*
          * 스터디 22주차
