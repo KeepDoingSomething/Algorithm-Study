@@ -9,24 +9,41 @@ public class TestMain {
         Leetcode leetcode = new Leetcode();
 
         /*
+         * 스터디 24주차
+         * */
+
+        // 양궁대회 (Level 2)
+        // https://school.programmers.co.kr/learn/courses/30/lessons/92342
+        programmers.setAnswer(new programmers.LV2_92342.Solution()).test();
+
+        // 휴게소 세우기 (Gold 4)
+        // https://www.acmicpc.net/problem/1477
+        baekJoon.setAnswer(new baekjoon.G4_1477.Main()).test();
+
+        // 택배상자 (Level 2)
+        // https://school.programmers.co.kr/learn/courses/30/lessons/131704
+        programmers.setAnswer(new programmers.LV2_131704.Solution()).test();
+
+
+        /*
          * 스터디 23주차
          * */
 
         // RGB 거리 2 (Gold 4)
         // https://www.acmicpc.net/problem/17404
-        baekJoon.setAnswer(new baekjoon.G4_17404.Main()).test();
+        // baekJoon.setAnswer(new baekjoon.G4_17404.Main()).test();
 
         // 숫자의 표현 (Level 2)
         // https://school.programmers.co.kr/learn/courses/30/lessons/12924
-        programmers.setAnswer(new programmers.LV2_12924.Solution()).test();
+        // programmers.setAnswer(new programmers.LV2_12924.Solution()).test();
 
         // 아기상어 (Gold 3)
         // https://www.acmicpc.net/problem/16236
-        baekJoon.setAnswer(new baekjoon.G3_16236.Main()).test();
+        // baekJoon.setAnswer(new baekjoon.G3_16236.Main()).test();
 
         // 해킹 (Gold 4)
         // https://www.acmicpc.net/problem/10282
-        baekJoon.setAnswer(new baekjoon.G4_10282.Main()).test();
+        // baekJoon.setAnswer(new baekjoon.G4_10282.Main()).test();
 
         /*
          * 스터디 22주차
