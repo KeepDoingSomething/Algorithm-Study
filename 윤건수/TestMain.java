@@ -1,3 +1,5 @@
+import baekjoon.G4_17404.MainDfs;
+
 public class TestMain {
 
     public static void main(String[] args) throws Exception {
@@ -7,20 +9,40 @@ public class TestMain {
         Leetcode leetcode = new Leetcode();
 
         /*
+         * 스터디 23주차
+         * */
+
+        // RGB 거리 2 (Gold 4)
+        // https://www.acmicpc.net/problem/17404
+        baekJoon.setAnswer(new baekjoon.G4_17404.Main()).test();
+
+        // 숫자의 표현 (Level 2)
+        // https://school.programmers.co.kr/learn/courses/30/lessons/12924
+        programmers.setAnswer(new programmers.LV2_12924.Solution()).test();
+
+        // 아기상어 (Gold 3)
+        // https://www.acmicpc.net/problem/16236
+        baekJoon.setAnswer(new baekjoon.G3_16236.Main()).test();
+
+        // 해킹 (Gold 4)
+        // https://www.acmicpc.net/problem/10282
+        baekJoon.setAnswer(new baekjoon.G4_10282.Main()).test();
+
+        /*
          * 스터디 22주차
          * */
 
         // N-Queen (Level 2)
         // https://school.programmers.co.kr/learn/courses/30/lessons/12952
-        programmers.setAnswer(new programmers.LV2_12952.Solution()).test();
+        // programmers.setAnswer(new programmers.LV2_12952.Solution()).test();
 
         // 스킬트리 (Level 2)
         // https://school.programmers.co.kr/learn/courses/30/lessons/49993
-        programmers.setAnswer(new programmers.LV2_49993.Solution()).test();
+        // programmers.setAnswer(new programmers.LV2_49993.Solution()).test();
 
         // 부분합 (Gold 4)
         // https://www.acmicpc.net/problem/1806
-        baekJoon.setAnswer(new baekjoon.G4_1806.Main()).test();
+        // baekJoon.setAnswer(new baekjoon.G4_1806.Main()).test();
 
         /*
          * 스터디 21주차
