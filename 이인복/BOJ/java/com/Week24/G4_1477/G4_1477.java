@@ -58,7 +58,3 @@ public class G4_1477 {
         System.out.println(left);
     }
 }
-/*
-- left 0 으로 설정해서 삽질
-- N 이 0 입력 대수롭지 않게 생각했는데 큰일
- */
