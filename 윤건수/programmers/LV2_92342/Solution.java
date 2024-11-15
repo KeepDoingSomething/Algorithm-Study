@@ -6,18 +6,18 @@ public class Solution {
 
     final int totalPoint = 10;
     int totalArrows;
-    int rionMaxTotalPoint;
+    int maxPointDiff;
     int[] apeachArrows;
     PriorityQueue<boolean[]> rionWinCase;
 
     public int[] solution(int n, int[] info) {
         this.totalArrows = n;
         this.apeachArrows = info;
-        this.rionMaxTotalPoint = 0;
+        this.maxPointDiff = 0;
         rionWinCase = new PriorityQueue<>((case1, case2) -> {
             for(int i = case1.length - 1; i >= 0; i--) {
-                if(case1[i] != case2[i]){
-                    return case1[i] ? -1 : 1;
+                if(case1[i] != case2[i] && case1[i]){
+                    return -1;
                 }
             }
             return 0;
@@ -27,7 +27,7 @@ public class Solution {
         dfs(winRion, 0);
 
         int[] answer = {-1};
-        if(rionMaxTotalPoint > 0){
+        if(maxPointDiff > 0){
             answer = new int[11];
             int rionArrows = 0;
             boolean[] bestRionWin = rionWinCase.poll();
@@ -45,9 +45,9 @@ public class Solution {
         return answer;
     }
 
-    private void dfs(boolean[] winRion, int winCount){
+    private void dfs(boolean[] winRion, int depth){
 
-        if(winCount == 11) return;
+        if(depth == 11) return;
         int rionPoint = 0;
         int apeachPoint = 0;
         for(int i = 0; i < 10; i++){
@@ -57,21 +57,22 @@ public class Solution {
         }
 
         if(rionPoint > apeachPoint && possible(winRion)){
-            // System.out.println(Arrays.toString(winRion));
-            if(rionPoint > rionMaxTotalPoint){
+            int pointDiff = rionPoint - apeachPoint;
+
+            if(pointDiff > maxPointDiff){
                 rionWinCase.clear();
-                rionMaxTotalPoint = rionPoint;
+                maxPointDiff = pointDiff;
                 rionWinCase.add(Arrays.copyOf(winRion, winRion.length));
-            }else if(rionPoint == rionMaxTotalPoint){
+            }else if(pointDiff == maxPointDiff){
                 rionWinCase.add(Arrays.copyOf(winRion, winRion.length));
             }
         }
 
-        winCount += 1;
+        depth += 1;
         for(int i = 0; i < totalPoint; i++){
             if(winRion[i]) continue;
             winRion[i] = true;
-            dfs(winRion, winCount);
+            dfs(winRion, depth);
             winRion[i] = false;
         }
     }
@@ -82,7 +83,7 @@ public class Solution {
             if(winRion[i]) needArrows += apeachArrows[i] + 1;
         }
 
-        return totalArrows <= needArrows;
+        return totalArrows >= needArrows;
     }
 
 }
