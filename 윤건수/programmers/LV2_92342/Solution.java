@@ -15,15 +15,15 @@ public class Solution {
         this.apeachArrows = info;
         this.maxPointDiff = 0;
         rionWinCase = new PriorityQueue<>((case1, case2) -> {
-            for(int i = case1.length - 1; i >= 0; i--) {
+            for(int i = case1.length - 2; i >= 0; i--) {
                 if(case1[i] != case2[i] && case1[i]){
-                    return -1;
+                    return 1;
                 }
             }
             return 0;
         });
 
-        boolean[] winRion = new boolean[10];
+        boolean[] winRion = new boolean[11];
         dfs(winRion, 0);
 
         int[] answer = {-1};
@@ -46,8 +46,6 @@ public class Solution {
     }
 
     private void dfs(boolean[] winRion, int depth){
-
-        if(depth == 11) return;
         int rionPoint = 0;
         int apeachPoint = 0;
         for(int i = 0; i < 10; i++){
@@ -69,12 +67,12 @@ public class Solution {
         }
 
         depth += 1;
-        for(int i = 0; i < totalPoint; i++){
-            if(winRion[i]) continue;
-            winRion[i] = true;
-            dfs(winRion, depth);
-            winRion[i] = false;
-        }
+        if(depth == 11) return;
+        winRion[10 - depth] = true;
+        dfs(winRion, depth);
+        winRion[10 - depth] = false;
+        dfs(winRion, depth);
+
     }
 
     private boolean possible(boolean[] winRion){
