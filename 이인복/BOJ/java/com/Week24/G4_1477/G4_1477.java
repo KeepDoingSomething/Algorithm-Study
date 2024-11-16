@@ -24,13 +24,13 @@ public class G4_1477 {
         int[] locations = new int[N + 2];
 
         st = new StringTokenizer(br.readLine());
-        locations[0] = 0;
+        locations[0] = 0;  // 시작
 
         for(int i = 1; i <= N; i++) {
             locations[i] = Integer.parseInt(st.nextToken());
         }
 
-        locations[N + 1] = L;
+        locations[N + 1] = L;  // 끝
         Arrays.sort(locations);
         // Input End
         binarySearch(locations, L, M);
@@ -41,11 +41,11 @@ public class G4_1477 {
         int right = lastLoc;
 
         while(left <= right) {
-            int mid = (left + right) / 2;
-            int cnt = 0;
+            int mid = (left + right) / 2;  // 최소 값
+            int cnt = 0;  // 최소 값으로 구간 사이의 휴게소 가능한 개수
 
             for(int i = 1; i < locations.length; i++) {
-                cnt += (locations[i] - locations[i - 1] - 1) / mid;
+                cnt += (locations[i] - locations[i - 1] - 1) / mid;  // 0-100 사이의 거리는 99이기 때문에 -1 해준 값
             }
 
             if(cnt > target){
