@@ -81,6 +81,8 @@ public interface Problem<P>{
 
         } catch (Exception e){
             e.printStackTrace();
+            failPrintln("************** 실패한 테스트가 있습니다. 결과를 확인해주세요 **************");
+            Toolkit.getDefaultToolkit().beep();
         }
     };
 
