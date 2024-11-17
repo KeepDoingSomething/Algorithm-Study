@@ -1,3 +1,11 @@
+/**
+ * Author    : Lee In Bok
+ * Date      : 2024.11.17(Sun)
+ * Runtime   : 108 ms
+ * Memory    : 14492 KB
+ * Algorithm : Greedy, Implementation
+ */
+
 package com.Week25.G4_1461;
 
 import java.io.BufferedReader;
