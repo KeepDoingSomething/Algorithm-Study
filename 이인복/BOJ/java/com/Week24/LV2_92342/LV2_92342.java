@@ -62,7 +62,7 @@ public class LV2_92342 {
                  */
                 answer = Objects.isNull(answer)
                        ? tempAns
-                       : tempAns.compareTo(answer) < 0 ? tempAns : answer;
+                       : answer.getOptimizedAnswer(tempAns);
 
                 // 강제로 맞춰준 0점 화살 다시 원복
                 if(idx == 0) {
@@ -124,6 +124,15 @@ public class LV2_92342 {
                     this.lowestScore = Math.min(this.lowestScore, i);
                 }
             }
+        }
+
+        /**
+         * 새로운 정답 후보와 비교해서 최적의 해를 반환
+         * @param temp 새로운 후보
+         * @return 최적의 후보
+         */
+        public Answer getOptimizedAnswer(Answer temp) {
+            return this.compareTo(temp) >= 0 ? temp : this;
         }
 
         /**
