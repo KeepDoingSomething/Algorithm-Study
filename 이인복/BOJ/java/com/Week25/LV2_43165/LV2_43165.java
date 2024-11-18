@@ -1,3 +1,11 @@
+/**
+ * Author    : Lee In Bok
+ * Date      : 2024.11.18(Mon)
+ * Runtime   : 6.77 ms
+ * Memory    : 81.8 MB
+ * Algorithm : Prime Number, Two Pointer
+ */
+
 package com.Week25.LV2_43165;
 
 public class LV2_43165 {
@@ -19,11 +27,11 @@ public class LV2_43165 {
         }
 
         public void backtrack(int idx, int acc, int[] numbers, int target) {
-            int plus = acc + numbers[idx];
-            int minus = acc - numbers[idx];
+            int plus = acc + numbers[idx];  // + 했을 경우
+            int minus = acc - numbers[idx];  // - 했을 경우
 
-            if(idx == numbers.length - 1) {
-                if(plus == target || minus == target) ans++;
+            if(idx == numbers.length - 1) {  // 모든 배열을 순회 했을 때
+                if(plus == target || minus == target) ans++;  // 타겟 넘버인 경우
 
                 return;
             }
