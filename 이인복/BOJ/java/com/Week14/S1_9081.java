@@ -36,11 +36,3 @@ public class S1_9081 {
         System.out.print(sb);
     }
 }
-
-/*
-ABCDE FGHIJ KLMNO PQRST UVWXY Z
-
-1
-SHUTT => 19 8 21 20 20
-STHTU => 19 20 8 20 21
- */

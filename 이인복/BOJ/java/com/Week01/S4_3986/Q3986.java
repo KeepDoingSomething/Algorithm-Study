@@ -8,7 +8,7 @@
 
 package com.Week01.S4_3986;
 
-import com.Solution;
+import com.self.Solution;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

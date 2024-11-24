@@ -1,6 +1,6 @@
 package com.Week02.S3_1913;
 
-import com.Solution;
+import com.self.Solution;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
