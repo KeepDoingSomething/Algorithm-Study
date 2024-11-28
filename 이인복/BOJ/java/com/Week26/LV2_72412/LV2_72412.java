@@ -71,7 +71,7 @@ public class LV2_72412 {
                 if(keyword.equals("-")) {
                     q.addAll(curNode.children.values());
                 } else {
-                    q.add(getChild(curNode, keyword));
+                    q.add(curNode.children.get(keyword));
                 }
             }
 
@@ -93,10 +93,6 @@ public class LV2_72412 {
             }
 
             return scores.size() - l;
-        }
-
-        public Node getChild(Node node, String key) {
-            return node.children.get(key);
         }
 
         public void insert(String info) {
