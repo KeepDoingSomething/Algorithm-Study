@@ -1,3 +1,11 @@
+/**
+ * Author    : Lee In Bok
+ * Date      : 2024.11.29(Fri)
+ * Runtime   : 713.14 ms
+ * Memory    : 258 MB
+ * Algorithm : Queue
+ */
+
 package com.Week26.LV2_42586;
 
 import java.util.*;
