@@ -1,8 +1,8 @@
 /**
  * Author    : Park Jeong Geun
  * Date      : 2024.11.18(Mon)
- * Runtime   : 287.20 ms
- * Memory    : 183MB
+ * Runtime   : 293.85 ms
+ * Memory    : 170MB
  * Algorithm : Prefix Sum + Brute force
  */
 
@@ -18,7 +18,7 @@ class Solution {
 
         // 누적 합 배열 info_sum
         // info_sum[i][j][k][l][p] : 개발언어가 i고, 직군이 j고, 경력이 k고, 소울푸드가 l이고 점수가 p 이상인 사람의 수
-        int[][][][][] info_sum = new int[3][3][3][3][100001];
+        int[][][][][] info_sum = new int[3][2][2][2][100001];
         
         for (String s : info) {
             StringTokenizer st = new StringTokenizer(s);
@@ -112,7 +112,6 @@ class Solution {
                     }      
                 }
             }
-            
             
             answer[q_idx++] = res;
         }
