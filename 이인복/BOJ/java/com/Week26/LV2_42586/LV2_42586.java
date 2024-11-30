@@ -17,6 +17,7 @@ public class LV2_42586 {
 
     class Solution {
         public int[] solution(int[] progresses, int[] speeds) {
+            // 반환 타입은 배열 이지만 정답의 개수를 예측할 수 없어 동적인 리스트 생성 (단순 추가니 ArrayList 로)
             List<Integer> ans = new ArrayList<>();
             Queue<Process> q = new LinkedList<>();
             int day = 1;
@@ -28,13 +29,15 @@ public class LV2_42586 {
             while(!q.isEmpty()) {
                 int cnt = 0;
 
+                // 100% 달성한 기능이 있다면 카운트 및 큐에서 제거
                 while(!q.isEmpty() && q.peek().isFinished(day)) {
                     q.poll();
                     cnt++;
                 }
 
-                day++;
+                day++;  // 하루 증가
 
+                // 완료된 기능이 존재하면 리스트로 반환
                 if(cnt > 0) {
                     ans.add(cnt);
                 }
