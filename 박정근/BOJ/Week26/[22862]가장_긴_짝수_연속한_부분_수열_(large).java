@@ -21,6 +21,7 @@ import java.util.Arrays;
 
 class Main {
 	static public void main(String []args) throws IOException {
+		// +@ 깃허브가 여기 indent를 자꾸 씹습니다.. 응애...
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
 
