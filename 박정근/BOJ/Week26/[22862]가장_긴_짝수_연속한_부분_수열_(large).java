@@ -1,6 +1,6 @@
 /**
  * Author    : Park Jeong Geun
- * Date      : 2024.11.25(Mon)
+ * Date      : 2024.11.30(Sat)
  * Runtime   : 516ms
  * Memory    : 118692KB
  * Algorithm : Two Pointer
@@ -31,10 +31,10 @@ class Main {
         st = new StringTokenizer(br.readLine());
         for (int i = 0; i < n; i++) arr[i] = Integer.parseInt(st.nextToken());
 
+        // 1) 짝수 부분 개수 / 홀수 부분 개수 / 짝 / 홀 ... 배열 만들기
         int[][] cnt_arr = new int[n][2];
         for (int i = 0; i < n; i++) Arrays.fill(cnt_arr[i], 0);
 
-        // 1) 짝수 부분 개수 / 홀수 부분 개수 / 짝 / 홀 ... 배열 만들기
         int mode = 0; // 0 : 짝수 부분 / 1 : 홀수 부분
         int idx = 0;
         int cnt = 1;
