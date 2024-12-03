@@ -9,20 +9,37 @@ public class TestMain {
         Leetcode leetcode = new Leetcode();
 
         /*
+         * 스터디 27주차
+         * */
+
+        // 전기가 부족해 (Gold 3)
+        // https://www.acmicpc.net/problem/10423
+        baekJoon.setAnswer(new baekjoon.G3_10423.Main()).test();
+
+        // 메뉴 리뉴얼 (Level 2)
+        // https://school.programmers.co.kr/learn/courses/30/lessons/72411
+        programmers.setAnswer(new programmers.LV2_72411.Solution()).test();
+
+        // 퍼즐 게임 챌린지 (Level 2)
+        // https://school.programmers.co.kr/learn/courses/30/lessons/340212
+        programmers.setAnswer(new programmers.LV2_340212.Solution()).test();
+
+
+        /*
          * 스터디 26주차
          * */
 
         // 순위검색 (Level 2)
         // https://school.programmers.co.kr/learn/courses/30/lessons/72412
-        programmers.setAnswer(new programmers.LV2_72412.Solution()).test();
+        // programmers.setAnswer(new programmers.LV2_72412.Solution()).test();
 
         // 기능개발 (Level 2)
         // https://school.programmers.co.kr/learn/courses/30/lessons/42586
-        programmers.setAnswer(new programmers.LV2_42586.Solution()).test();
+        // programmers.setAnswer(new programmers.LV2_42586.Solution()).test();
 
         // 가장 긴 짝수 연속한 부분 수열 (Gold 5)
         // https://www.acmicpc.net/problem/22862
-        baekJoon.setAnswer(new baekjoon.G5_22862.Main()).test();
+        // baekJoon.setAnswer(new baekjoon.G5_22862.Main()).test();
 
 
         /*
