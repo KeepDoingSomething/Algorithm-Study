@@ -125,6 +125,9 @@ Remove: 파일, 폴더 삭제
 
 # **[ ⛬ 히스토리 ]**
 
+<details>
+    <summary>2024 스터디 히스토리</summary>
+
 |날짜|문제|
 |---|:---:|
 |05.13 - 05.19|[Week01](https://github.com/KeepDoingSomething/Algorithm-Study/issues/8)|
@@ -152,3 +155,7 @@ Remove: 파일, 폴더 삭제
 |11.04 - 11.10|[Week23](https://github.com/KeepDoingSomething/Algorithm-Study/issues/130)|
 |11.11 - 11.17|[Week24](https://github.com/KeepDoingSomething/Algorithm-Study/issues/137)|
 |11.18 - 11.24|[Week25](https://github.com/KeepDoingSomething/Algorithm-Study/issues/143)|
+|11.25 - 12.01|[Week26](https://github.com/KeepDoingSomething/Algorithm-Study/issues/153)|
+|12.02 - 12.08|[Week27](https://github.com/KeepDoingSomething/Algorithm-Study/issues/159)|
+
+</details>
