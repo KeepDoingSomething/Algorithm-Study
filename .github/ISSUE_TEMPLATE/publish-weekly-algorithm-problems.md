@@ -3,7 +3,7 @@ name: Publish weekly algorithm problems
 about: To inform everyone in group that weekly algorithm problems has been issued
 title: "[ #WeekOO ] 문제 "
 labels: Problems
-assignees: gsandoo, Hojip-Kim, jacomyou0121, nashs789, wlghsp,
+assignees: gsandoo, jacomyou0121, nashs789,
   ygs3004, r3j0, kcsc2217, sksk713, moonformeli
 
 ---

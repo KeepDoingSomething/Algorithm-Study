@@ -9,20 +9,54 @@ public class TestMain {
         Leetcode leetcode = new Leetcode();
 
         /*
+         * 스터디 26주차
+         * */
+
+        // 순위검색 (Level 2)
+        // https://school.programmers.co.kr/learn/courses/30/lessons/72412
+        programmers.setAnswer(new programmers.LV2_72412.Solution()).test();
+
+        // 기능개발 (Level 2)
+        // https://school.programmers.co.kr/learn/courses/30/lessons/42586
+        programmers.setAnswer(new programmers.LV2_42586.Solution()).test();
+
+        // 가장 긴 짝수 연속한 부분 수열 (Gold 5)
+        // https://www.acmicpc.net/problem/22862
+        baekJoon.setAnswer(new baekjoon.G5_22862.Main()).test();
+
+
+        /*
+         * 스터디 25주차
+         * */
+
+        // 도서관 (Gold 4)
+        // https://www.acmicpc.net/problem/1461
+        // baekJoon.setAnswer(new baekjoon.G4_1461.Main()).test();
+
+        // 소수의 연속합 (Gold 3)
+        // https://www.acmicpc.net/problem/1644
+        // baekJoon.setAnswer(new baekjoon.G3_1644.Main()).test();
+
+        // 타겟 넘버 (Level 2)
+        // https://school.programmers.co.kr/learn/courses/30/lessons/43165
+        // programmers.setAnswer(new programmers.LV2_43165.Solution()).test();
+
+
+        /*
          * 스터디 24주차
          * */
 
         // 양궁대회 (Level 2)
         // https://school.programmers.co.kr/learn/courses/30/lessons/92342
-        programmers.setAnswer(new programmers.LV2_92342.Solution()).test();
+        // programmers.setAnswer(new programmers.LV2_92342.Solution()).test();
 
         // 휴게소 세우기 (Gold 4)
         // https://www.acmicpc.net/problem/1477
-        baekJoon.setAnswer(new baekjoon.G4_1477.Main()).test();
+        // baekJoon.setAnswer(new baekjoon.G4_1477.Main()).test();
 
         // 택배상자 (Level 2)
         // https://school.programmers.co.kr/learn/courses/30/lessons/131704
-        programmers.setAnswer(new programmers.LV2_131704.Solution()).test();
+        // programmers.setAnswer(new programmers.LV2_131704.Solution()).test();
 
 
         /*
@@ -44,6 +78,7 @@ public class TestMain {
         // 해킹 (Gold 4)
         // https://www.acmicpc.net/problem/10282
         // baekJoon.setAnswer(new baekjoon.G4_10282.Main()).test();
+
 
         /*
          * 스터디 22주차
