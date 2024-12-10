@@ -1,3 +1,11 @@
+/**
+ * Author    : Lee In Bok
+ * Date      : 2024.12.10(Tue)
+ * Runtime   : 3284 ms
+ * Memory    : 17836 KB
+ * Algorithm : Backtracking
+ */
+
 package com.Week28.G4_9663;
 
 import java.util.Scanner;
