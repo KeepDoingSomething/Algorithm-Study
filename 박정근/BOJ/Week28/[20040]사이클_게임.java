@@ -1,8 +1,8 @@
 /**
  * Author    : Park Jeong Geun
  * Date      : 2024.12.10(Tue)
- * Runtime   : 148ms
- * Memory    : 47224KB
+ * Runtime   : 736ms
+ * Memory    : 265460KB
  * Algorithm : Union Find
  */
 
