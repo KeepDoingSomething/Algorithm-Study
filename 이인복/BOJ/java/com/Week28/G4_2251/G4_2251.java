@@ -1,8 +1,8 @@
 /**
  * Author    : Lee In Bok
  * Date      : 2024.12.11(Wed)
- * Runtime   : 176 ms
- * Memory    : 26724 KB
+ * Runtime   : 172 ms
+ * Memory    : 26748 KB
  * Algorithm : BFS
  */
 
@@ -25,60 +25,33 @@ public class G4_2251 {
         while(!q.isEmpty()) {
             Water water = q.poll();
 
-            if(!visited[water.a][water.b][water.c]) {
-                if(water.a == 0) {  // A 가 비어 있을 때 C 의 상태 물의 양 저장
-                    treeSet.add(water.c);
-                }
+            if(water.waters[0] == 0) treeSet.add(water.waters[2]);
 
-                visited[water.a][water.b][water.c] = true;  // 방문 처리
+            for(int from = 0; from < 3; from++) {
+                for(int to = 0; to < 3; to++) {
+                    if(from == to || water.waters[from] == 0) continue;
 
-                // A -> B
-                if(water.a + water.b >= capacity[1]) {
-                    q.add(new Water(water.a - (capacity[1] - water.b), capacity[1], water.c));
-                } else {
-                    q.add(new Water(0, water.a + water.b, water.c));
-                }
+                    int[] newWaters = Arrays.copyOf(water.waters, 3);
 
-                // A - > C
-                if(water.a + water.c >= capacity[2]) {
-                    q.add(new Water(water.a - (capacity[2] - water.c), water.b, capacity[2]));
-                } else {
-                    q.add(new Water(0, water.b, water.a + water.c));
-                }
+                    if(newWaters[from] + newWaters[to] >= capacity[to]) {
+                        newWaters[from] = newWaters[from] - (capacity[to] - newWaters[to]);
+                        newWaters[to] = capacity[to];
+                    } else {
+                        newWaters[to] = newWaters[from] + newWaters[to];
+                        newWaters[from] = 0;
+                    }
 
-                // B -> A
-                if(water.b + water.a >= capacity[0]) {
-                    q.add(new Water(capacity[0], water.b - (capacity[0] - water.a), water.c));
-                } else {
-                    q.add(new Water(water.a + water.b, 0, water.c));
-                }
-
-                // B -> C
-                if(water.b + water.c >= capacity[2]) {
-                    q.add(new Water(water.a, water.b - (capacity[2] - water.c), capacity[2]));
-                } else {
-                    q.add(new Water(water.a, 0, water.b + water.c));
-                }
-
-                // C -> A
-                if(water.a + water.c >= capacity[0]) {
-                    q.add(new Water(capacity[0], water.b, water.c - (capacity[0] - water.a)));
-                } else {
-                    q.add(new Water(water.a + water.c, water.b, 0));
-                }
-
-                // C -> B
-                if(water.b + water.c >= capacity[1]) {
-                    q.add(new Water(water.a, capacity[1], water.c - (capacity[1] - water.b)));
-                } else {
-                    q.add(new Water(water.a, water.b + water.c, 0));
+                    if(!visited[newWaters[0]][newWaters[1]][newWaters[2]]) {
+                        visited[newWaters[0]][newWaters[1]][newWaters[2]] = true;
+                        q.add(new Water(newWaters[0], newWaters[1], newWaters[2]));
+                    }
                 }
             }
         }
 
         StringBuilder sb = new StringBuilder();
 
-        for (int num : treeSet) {
+        for(int num : treeSet) {
             sb.append(num).append(" ");
         }
 
@@ -86,14 +59,10 @@ public class G4_2251 {
     }
 
     static class Water {
-        int a;
-        int b;
-        int c;
+        int [] waters;
 
         public Water(int a, int b, int c) {
-            this.a = a;
-            this.b = b;
-            this.c = c;
+            waters = new int[]{a, b, c};
         }
     }
 }
