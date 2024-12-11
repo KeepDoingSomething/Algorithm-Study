@@ -33,14 +33,16 @@ public class G4_2251 {
 
                     int[] newWaters = Arrays.copyOf(water.waters, 3);
 
+                    // ex) A -> B 로 이동할 때  A + B 가 B 물통이 수용할 수 있는 최대를 넘었을 때
                     if(newWaters[from] + newWaters[to] >= capacity[to]) {
-                        newWaters[from] = newWaters[from] - (capacity[to] - newWaters[to]);
-                        newWaters[to] = capacity[to];
+                        newWaters[from] = newWaters[from] - (capacity[to] - newWaters[to]);  // A = A - MAX_B - B (B 를 최대 수용 가능 까지 채울 수 있도록 A 에서 제거)
+                        newWaters[to] = capacity[to];  // B = 최대 수용
                     } else {
-                        newWaters[to] = newWaters[from] + newWaters[to];
-                        newWaters[from] = 0;
+                        newWaters[to] = newWaters[from] + newWaters[to];  // B = A + B
+                        newWaters[from] = 0;  // A = 0
                     }
 
+                    // 방문 처리 및 BFS 노드 추가
                     if(!visited[newWaters[0]][newWaters[1]][newWaters[2]]) {
                         visited[newWaters[0]][newWaters[1]][newWaters[2]] = true;
                         q.add(new Water(newWaters[0], newWaters[1], newWaters[2]));
