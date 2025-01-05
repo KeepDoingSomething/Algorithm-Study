@@ -11,7 +11,6 @@
 | 전유진 |[<img src="https://avatars.githubusercontent.com/jacomyou0121" width="50px;">](https://github.com/jacomyou0121)|<span><img src="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span>|
 | 강산아 |[<img src="https://avatars.githubusercontent.com/gsandoo" width="50px;">](https://github.com/gsandoo)|<span><img src="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span>|
 | 이상경 |[<img src="https://avatars.githubusercontent.com/sksk713" width="50px;">](https://github.com/sksk713)|<span><img src="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span>|
-| 양문규 |[<img src="https://avatars.githubusercontent.com/moonformeli" width="50px;">](https://github.com/moonformeli)|<span><img src="https://img.shields.io/badge/Python-3776AB.svg?&style=for-the-badge&logo=Python&logoColor=white"/></span>|
 | 이성원 |[<img src="https://avatars.githubusercontent.com/kcsc2217" width="50px;">](https://github.com/kcsc2217)|<span><img src="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span>|
 | 박정근 |[<img src="https://avatars.githubusercontent.com/r3j0" width="50px;">](https://github.com/r3j0)|<span><img src="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span>|
 
