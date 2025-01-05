@@ -4,7 +4,7 @@ about: To inform everyone in group that weekly algorithm problems has been issue
 title: "[ #WeekOO ] 문제 "
 labels: Problems
 assignees: gsandoo, jacomyou0121, nashs789,
-  ygs3004, r3j0, kcsc2217, sksk713, moonformeli
+  ygs3004, r3j0, kcsc2217
 
 ---
 
