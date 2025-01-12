@@ -54,8 +54,9 @@ public class LV2_77485 {
             int x = x1;
             int y = y1;
             int min = Integer.MAX_VALUE;
-            int prevNum = board[x + 1][y];
+            int prevNum = board[x + 1][y];  // 초기 값은 현재 요소의 아래 위치에 있어서 세팅
 
+            // 각 방향마다 경계선 까지 도착하면 종료 하도록 설정
             for(int direction = 0; direction < 4; direction++) {
                 while((direction == RIGHT && y != y2)
                    || (direction == DOWN && x != x2)
@@ -64,10 +65,9 @@ public class LV2_77485 {
                 ) {
                     int tmp = prevNum;
 
-                    min = Math.min(min, prevNum);
-                    tmp = prevNum;
-                    prevNum = board[x][y];
-                    board[x][y] = tmp;
+                    min = Math.min(min, prevNum);  // 회전할 때 최소 값 찾기
+                    prevNum = board[x][y];  // swap
+                    board[x][y] = tmp;  // swap
 
                     x += dx[direction];
                     y += dy[direction];
@@ -77,6 +77,7 @@ public class LV2_77485 {
             return min;
         }
 
+        // 2 차원 배열 요소 1 부터 차례로 생성
         public int[][] getBoard(int rows, int columns) {
             return IntStream.range(0, rows)
                             .mapToObj(row -> IntStream.range(1, columns + 1)

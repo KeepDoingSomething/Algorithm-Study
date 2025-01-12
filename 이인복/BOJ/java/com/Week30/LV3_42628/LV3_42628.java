@@ -21,8 +21,8 @@ public class LV3_42628 {
 
         public int[] solution(String[] operations) {
             int[] answer = new int[] {0, 0};
-            PriorityQueue<Integer> maxPq = new PriorityQueue<>((a, b) -> b - a);
-            PriorityQueue<Integer> minPq = new PriorityQueue<>();
+            PriorityQueue<Integer> minPq = new PriorityQueue<>();  // 오름차순 큐
+            PriorityQueue<Integer> maxPq = new PriorityQueue<>((a, b) -> b - a);  // 내림차순 큐
             StringTokenizer st;
             boolean isMax = true;
 
