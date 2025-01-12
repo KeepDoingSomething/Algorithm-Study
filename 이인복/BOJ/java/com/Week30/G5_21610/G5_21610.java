@@ -120,8 +120,9 @@ public class G5_21610 {
 
         // 이동시 양 외각 사이드와 위와 아래가 이어져 있기 때문에 계산 해주는 함수
         public int calcPoint(int orgPoint, int movePoint, int boundary) {
+            // row 이동할 때 오른쪽 사이드에 왼쪽으로 넘어가면서 최대 boundary(N) 값 이상으로 증가 가능하기 때문에 나머지 값 구함
             orgPoint = (orgPoint + movePoint) % boundary;
-
+            // 왼쪽으로 이동할 때 오른쪽으로 넘어가기 위해서 -1 인지 체크
             return (orgPoint == -1) ? boundary - 1 : orgPoint;
         }
 
