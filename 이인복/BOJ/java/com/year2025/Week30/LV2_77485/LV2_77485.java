@@ -6,7 +6,7 @@
  * Algorithm : Array
  */
 
-package com.Week30.LV2_77485;
+package com.year2025.Week30.LV2_77485;
 
 import java.util.ArrayList;
 import java.util.Arrays;

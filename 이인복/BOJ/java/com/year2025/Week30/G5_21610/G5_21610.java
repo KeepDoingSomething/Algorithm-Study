@@ -6,7 +6,7 @@
  * Algorithm : Implementation
  */
 
-package com.Week30.G5_21610;
+package com.year2025.Week30.G5_21610;
 
 import java.io.BufferedReader;
 import java.io.IOException;

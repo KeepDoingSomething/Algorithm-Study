@@ -6,7 +6,7 @@
  * Algorithm : Priority Queue
  */
 
-package com.Week30.LV3_42628;
+package com.year2025.Week30.LV3_42628;
 
 import java.util.*;
 
