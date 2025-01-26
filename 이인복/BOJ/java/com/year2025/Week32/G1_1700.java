@@ -19,7 +19,7 @@ public class G1_1700 {
         StringTokenizer st = new StringTokenizer(br.readLine());
         int N = Integer.parseInt(st.nextToken());
         int K = Integer.parseInt(st.nextToken());
-        Map<Integer, Queue<Task>> schedule = new HashMap<>();
+        Map<Integer, Queue<Tool>> schedule = new HashMap<>();
         Set<Integer> multiTab = new HashSet<>();
         int ans = 0;
         int[] seq = Arrays.stream(br.readLine().split(" "))
@@ -28,30 +28,20 @@ public class G1_1700 {
 
         for(int i = 0; i < K; i++) {
             schedule.putIfAbsent(seq[i], new LinkedList<>());
-            schedule.get(seq[i]).add(new Task(seq[i], i));
+            schedule.get(seq[i]).add(new Tool(seq[i], i));
         }
 
-        int idx = 0;
-
-        // 멀티탭을 콘센트 교체 없이 끝나는 경우가 있어서 while 문을 아래와 같이 구성함
-        /*
-            2 칸 모두 교체 없이 진행 가능한 케이스
-            2 10
-            1 1 2 1 1 2 1 1 2 1
-         */
-        while(idx != seq.length && multiTab.size() != N) {
-            int tool = seq[idx];
-
-            multiTab.add(tool);
-            schedule.get(seq[idx]).poll();
-            idx++;
-        }
-
-        for(int i = N; i < K; i++) {
-            int newTool = seq[i];
+        for(int newTool : seq) {
             boolean noNextSchedule = false;
             // 멀티탭에서 사용중인 모든 용품이 다음 스케줄이 없는경우 아무거나 제거
-            Task temp = new Task(0, Integer.MIN_VALUE);
+            Tool temp = new Tool(0, Integer.MIN_VALUE);
+
+            // 멀티탭이 가득 차지 않은 경우
+            if(multiTab.size() != N) {
+                multiTab.add(newTool);
+                schedule.get(newTool).poll();
+                continue;
+            }
 
             // 멀티탭이 이미 꽃혀 있는 케이스
             if(multiTab.contains(newTool)) {
@@ -63,10 +53,10 @@ public class G1_1700 {
             Set<Integer> tempSet = new HashSet<>();
 
             for(int using : multiTab) {
-                Queue<Task> tasks = schedule.get(using);
+                Queue<Tool> tools = schedule.get(using);
 
                 // 다음 스케줄이 없는 경우 멀티탭에서 뽑아도됨
-                if(tasks.isEmpty()) {
+                if(tools.isEmpty()) {
                     multiTab.remove(using);
                     multiTab.add(newTool);
                     ans++;
@@ -76,9 +66,9 @@ public class G1_1700 {
                 }
 
                 // 뽑아야 하는케이스에는 가장 늦게 사용하는 도구를 temp 에 보관함
-                if(!tempSet.contains(tasks.peek().tool) && temp.seq < tasks.peek().seq) {
-                    tempSet.add(tasks.peek().tool);
-                    temp = tasks.peek();
+                if(!tempSet.contains(tools.peek().tool) && temp.seq < tools.peek().seq) {
+                    tempSet.add(tools.peek().tool);
+                    temp = tools.peek();
                 }
             }
 
@@ -94,11 +84,11 @@ public class G1_1700 {
         System.out.println(ans);
     }
 
-    static class Task {
+    static class Tool {
         int tool;
         int seq;
 
-        public Task(int tool, int seq) {
+        public Tool(int tool, int seq) {
             this.tool = tool;
             this.seq = seq;
         }
