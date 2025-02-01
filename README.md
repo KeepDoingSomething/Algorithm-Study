@@ -159,3 +159,17 @@ Remove: 파일, 폴더 삭제
 |12.16 - 12.22|[Week29](https://github.com/KeepDoingSomething/Algorithm-Study/issues/173)|
 
 </details>
+
+</br>
+
+<details>
+    <summary>2024 스터디 히스토리</summary>
+
+|날짜|문제|
+|---|:---:|
+|01.12|[Week30](https://github.com/KeepDoingSomething/Algorithm-Study/issues/180)|
+|01.19|[Week31](https://github.com/KeepDoingSomething/Algorithm-Study/issues/185)|
+|01.26|[Week32](https://github.com/KeepDoingSomething/Algorithm-Study/issues/194)|
+|02.09|[Week33](https://github.com/KeepDoingSomething/Algorithm-Study/issues/200)|
+
+</details>
