@@ -163,7 +163,7 @@ Remove: 파일, 폴더 삭제
 </br>
 
 <details>
-    <summary>2024 스터디 히스토리</summary>
+    <summary>2025 스터디 히스토리</summary>
 
 |날짜|문제|
 |---|:---:|
