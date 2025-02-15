@@ -56,68 +56,19 @@ public class G2_1202 {
 
         System.out.println(ans);
     }
-}
 
-class Jewellery implements Comparable<Jewellery> {
-    int weight;
-    int value;
+    static class Jewellery implements Comparable<Jewellery> {
+        int weight;
+        int value;
 
-    public Jewellery(int weight, int value) {
-        this.weight = weight;
-        this.value = value;
+        public Jewellery(int weight, int value) {
+            this.weight = weight;
+            this.value = value;
+        }
+
+        @Override
+        public int compareTo(Jewellery je) {
+            return this.weight - je.weight;
+        }
     }
-
-    @Override
-    public int compareTo(Jewellery je) {
-        return this.weight - je.weight;
-    }
 }
-
-/*
-4 3
-2 3
-2 1
-3 5
-3 6
-3
-3
-3
-ans: 14
-
-4 4
-1 100
-2 200
-13 300
-10 500
-10
-10
-10
-14
-ans: 1100
-
-9 5
-4 5
-4 9
-4 10
-8 55
-14 20
-9 15
-8 55
-8 5
-11 54
-10
-5
-4
-15
-20
-ans: 183
-
-3 3
-20 12
-0 20
-16 16
-17
-14
-7
-ans: 36
- */
