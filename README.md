@@ -160,8 +160,6 @@ Remove: 파일, 폴더 삭제
 
 </details>
 
-</br>
-
 <details>
     <summary>2025 스터디 히스토리</summary>
 
@@ -171,5 +169,7 @@ Remove: 파일, 폴더 삭제
 |01.19|[Week31](https://github.com/KeepDoingSomething/Algorithm-Study/issues/185)|
 |01.26|[Week32](https://github.com/KeepDoingSomething/Algorithm-Study/issues/194)|
 |02.09|[Week33](https://github.com/KeepDoingSomething/Algorithm-Study/issues/200)|
+|02.16|[Week34](https://github.com/KeepDoingSomething/Algorithm-Study/issues/207)|
+|02.23|[Week35](https://github.com/KeepDoingSomething/Algorithm-Study/issues/211)|
 
 </details>
