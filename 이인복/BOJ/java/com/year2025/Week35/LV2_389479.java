@@ -1,6 +1,6 @@
 /**
  * Author    : Lee In Bok
- * Date      : 2025.02.17(Sun)
+ * Date      : 2025.02.17(Mon)
  * Runtime   : 5.03 ms
  * Memory    : 88.9 MB
  * Algorithm : Implementation
