@@ -5,7 +5,7 @@ import java.util.*;
  * Date             :   2025-02-17
  * Runtime          :   70.64 ms
  * Memory           :   106 MB
- * Used algorithm   :   Brute force
+ * Used algorithm   :   Binary search
  *
  * https://dev-hiro.tistory.com/144 를 참조해 풀이하였습니다.
  */
