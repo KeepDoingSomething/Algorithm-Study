@@ -40,11 +40,11 @@ public class Main {
 
         // 여행 계획에 속한 도시들 입력
         StringTokenizer st = new StringTokenizer(br.readLine());
-        int max = Integer.MIN_VALUE;
+
 
         for(int i = 0; i < M; i++){
             city[i] = Integer.parseInt(st.nextToken());
-            max = Math.max(city[i], max);  // 여행 계획에서 가장 큰 도시 번호 기록
+
         }
 
         // 여행 계획에 속한 도시들이 모두 연결되어 있는지 확인
