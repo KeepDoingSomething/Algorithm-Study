@@ -65,6 +65,7 @@ public class LV2_388352 {
             int totalCnt = 0;
             List<Integer> trueList = new ArrayList<>();
 
+            // 현재 조합 (방문된 숫자 취합)
             for(int t = 1; t < visited.length; t++) {
                 if(visited[t]) {
                     trueList.add(t);
@@ -73,6 +74,7 @@ public class LV2_388352 {
 
             for(int i = 0; i < ans.length; i++) {
                 int cnt = 0;
+                // 주어진 q 를 HashSet 으로 만들어 놓은 자료 구조로 일치한 숫자 갯수 확인
                 Set<Integer> set = sets.get(i);
 
                 for(Integer trueIdx : trueList) {
