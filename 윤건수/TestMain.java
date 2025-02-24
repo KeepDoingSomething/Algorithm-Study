@@ -9,20 +9,37 @@ public class TestMain {
         Leetcode leetcode = new Leetcode();
 
         /*
-         * 스터디 54주차
+         * 스터디 36주차
+         * */
+
+        // 파티 (Gold 3)
+        // https://www.acmicpc.net/problem/1238
+        baekJoon.setAnswer(new baekjoon.G3_1238.Main()).test();
+
+        // 도시 분할 계해 (Gold 4)
+        // https://www.acmicpc.net/problem/1647
+        baekJoon.setAnswer(new baekjoon.G4_1647.Main()).test();
+
+        // 1학년 (Gold 5)
+        // https://www.acmicpc.net/problem/5557
+        baekJoon.setAnswer(new baekjoon.G5_5557.Main()).test();
+
+
+        /*
+         * 스터디 35주차
          * */
 
         // 서버 증설 횟수 (Level 2)
         // https://school.programmers.co.kr/learn/courses/30/lessons/389479
-        programmers.setAnswer(new programmers.LV2_389479.Solution()).test();
+        // programmers.setAnswer(new programmers.LV2_389479.Solution()).test();
 
         // 비밀 코드 해독 (Level 2)
         // https://school.programmers.co.kr/learn/courses/30/lessons/388352
-        programmers.setAnswer(new programmers.LV2_388352.Solution()).test();
+        // programmers.setAnswer(new programmers.LV2_388352.Solution()).test();
 
         // 입국 심사(Level 3)
         // https://school.programmers.co.kr/learn/courses/30/lessons/43238
-        programmers.setAnswer(new programmers.LV3_43238.Solution()).test();
+        // programmers.setAnswer(new programmers.LV3_43238.Solution()).test();
 
 
         /*
