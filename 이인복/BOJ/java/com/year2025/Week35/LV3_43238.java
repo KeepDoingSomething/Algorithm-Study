@@ -22,10 +22,12 @@ public class LV3_43238 {
         public long solution(int n, int[] times) {
             long ans = 0;
             long l = 1;
+            // 나올 수 있는 최대 시간 계산
             long r = (long)n * Arrays.stream(times).max().getAsInt();
 
             while(l <= r) {
                 long mid = (l + r) / 2;
+                // 각 심사관이 현재 시간(mid) 안에 처리할 수 있는 사람의 수
                 long people = Arrays.stream(times)
                                     .mapToLong(e -> mid / e)
                                     .sum();
