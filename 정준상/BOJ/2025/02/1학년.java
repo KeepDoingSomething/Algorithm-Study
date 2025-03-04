@@ -8,7 +8,7 @@ import java.util.*;
  * Memory           :   14.372 MB
  * Used algorithm   :   Dynamic programming
  */
-public class Main {
+class Main {
 
     private static final BufferedReader br = new BufferedReader(
             new InputStreamReader(System.in)
