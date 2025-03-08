@@ -9,20 +9,33 @@ public class TestMain {
         Leetcode leetcode = new Leetcode();
 
         /*
+         * 스터디 38주차
+         * */
+
+        //말이 되고픈 원숭이 (Gold 3)
+        // https://www.acmicpc.net/problem/1600
+        baekJoon.setAnswer(new baekjoon.G3_1600.Main()).test();
+
+        // 앱 (Gold 3)
+        // https://www.acmicpc.net/problem/7579
+        baekJoon.setAnswer(new baekjoon.G3_7579.Main()).test();
+
+
+        /*
          * 스터디 37주차
          * */
 
         // 지게차와 크레인 (Level 2)
         // https://school.programmers.co.kr/learn/courses/30/lessons/388353
-        programmers.setAnswer(new programmers.LV2_388353.Solution()).test();
+        // programmers.setAnswer(new programmers.LV2_388353.Solution()).test();
 
         // 칵테일 (Gold 2)
         // https://www.acmicpc.net/problem/1033
-        baekJoon.setAnswer(new baekjoon.G2_1033.Main()).test();
+        // baekJoon.setAnswer(new baekjoon.G2_1033.Main()).test();
 
         // 1로 만들기 2 (Silver 1)
         // https://www.acmicpc.net/problem/12852
-        baekJoon.setAnswer(new baekjoon.S1_12852.Main()).test();
+        // baekJoon.setAnswer(new baekjoon.S1_12852.Main()).test();
 
 
         /*
