@@ -27,17 +27,20 @@ public class G5_12852 {
         int temp = 1;
         stack.push(temp);
 
+        // 역추적: 목표로 하는 1 번 배열방에서 이전 각 요소로 저장된 이전 노드 번호를 타고 간다.
         while(temp != N) {
             stack.push(seq[temp]);
             temp = seq[temp];
         }
 
+        // 경로 사이즈 출력
         System.out.println(stack.size() - 1);
 
         while(!stack.isEmpty()) {
             sb.append(stack.pop()).append(" ");
         }
 
+        // 경로 출력
         System.out.println(sb);
     }
 
@@ -63,6 +66,7 @@ public class G5_12852 {
         }
     }
 
+    // 경로 추적을 위해서 seq 배열에 이전 노드의 번호를 저장 후 다음 노드를 큐에 담는다.
     public static void addAndCheck(int cur, int next) {
         if(seq[next] == 0) {
             seq[next] = cur;  // 다음 숫자에 이전 숫자 기록

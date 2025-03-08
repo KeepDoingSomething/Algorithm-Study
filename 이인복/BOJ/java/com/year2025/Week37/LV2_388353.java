@@ -62,6 +62,7 @@ public class LV2_388353 {
 
         public static void useForkLift(Node[][] board, String request) {
             Queue<Node> q = new LinkedList<>();
+            // 제거 목록을 임시 저장한다. (이유: 로직이 동작하는동안 컨테이너를 빼면 다른 컨테이너가 영향을 받음)
             Queue<Node> shipOutList = new LinkedList<>();
             boolean[][] visited = new boolean[N + 2][M + 2];
 
@@ -88,7 +89,8 @@ public class LV2_388353 {
                     }
                 }
             }
-            
+
+            // 제거 목록으로 저장된 컨테이너 좌표 삭제
             while(!shipOutList.isEmpty()) {
                 Node target = shipOutList.poll();
 
@@ -97,6 +99,7 @@ public class LV2_388353 {
             }
         }
 
+        // 크레인은 지형적인 영향을 안받기 때문에 컨테이너 전부 제거
         public static void useCrane(Node[][] board, String request) {
             for(int i = 0; i < board.length; i++) {
                 for(int j = 0; j < board[i].length; j++) {
