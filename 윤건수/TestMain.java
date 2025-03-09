@@ -12,13 +12,17 @@ public class TestMain {
          * 스터디 38주차
          * */
 
-        //말이 되고픈 원숭이 (Gold 3)
+        // 말이 되고픈 원숭이 (Gold 3)
         // https://www.acmicpc.net/problem/1600
         baekJoon.setAnswer(new baekjoon.G3_1600.Main()).test();
 
         // 앱 (Gold 3)
         // https://www.acmicpc.net/problem/7579
         baekJoon.setAnswer(new baekjoon.G3_7579.Main()).test();
+
+        // 배달 (Level 2)
+        // https://school.programmers.co.kr/learn/courses/30/lessons/12978
+        programmers.setAnswer(new programmers.LV2_12987.Solution()).test();
 
 
         /*
