@@ -9,7 +9,7 @@ import java.util.stream.*;
  * Memory           :   315.068 MB
  * Used algorithm   :   Minimum spanning tree (Kruskal)
  */
-public class Main {
+class Main {
 
     private static final BufferedReader br = new BufferedReader(
             new InputStreamReader(System.in)

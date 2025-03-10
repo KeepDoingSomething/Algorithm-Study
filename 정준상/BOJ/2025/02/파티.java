@@ -8,7 +8,7 @@ import java.util.*;
  * Memory           :   23.532 MB
  * Used algorithm   :   Shortest path (Dijkstra)
  */
-public class Main {
+class Main {
 
     private static final BufferedReader br = new BufferedReader(
             new InputStreamReader(System.in)
