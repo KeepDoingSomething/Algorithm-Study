@@ -6,12 +6,13 @@
 # **[ 👨‍👨‍👧‍👦 ‍멤버 ]**
 | 이름  |Github|언어|
 |-----|:---:|:---:|
-| 이인복 |[<img src="https://avatars.githubusercontent.com/nashs789" width="50px;">](https://github.com/nashs789)|<span><img src="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span> <span><img src="https://img.shields.io/badge/Python-3776AB.svg?&style=for-the-badge&logo=Python&logoColor=white"/></span>|
+| 이인복 |[<img src="https://avatars.githubusercontent.com/nashs789" width="50px;">](https://github.com/nashs789)|<span><img src="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span>|
 | 윤건수 |[<img src="https://avatars.githubusercontent.com/ygs3004" width="50px;">](https://github.com/ygs3004)|<span><img src="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span>|
-| 전유진 |[<img src="https://avatars.githubusercontent.com/jacomyou0121" width="50px;">](https://github.com/jacomyou0121)|<span><img src="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span>|
 | 강산아 |[<img src="https://avatars.githubusercontent.com/gsandoo" width="50px;">](https://github.com/gsandoo)|<span><img src="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span>|
 | 박정근 |[<img src="https://avatars.githubusercontent.com/r3j0" width="50px;">](https://github.com/r3j0)|<span><img src="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span>|
 | 이훈일 |[<img src="https://avatars.githubusercontent.com/Leehunil" width="50px;">](https://github.com/Leehunil)|<span><img src="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span>|
+| 이성원 |[<img src="https://avatars.githubusercontent.com/kcsc2217" width="50px;">](https://github.com/kcsc2217)|<span><img src="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span>|
+| 정준상 |[<img src="https://avatars.githubusercontent.com/jbw9964" width="50px;">](https://github.com/jbw9964)|<span><img src="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/></span>|
 
 </br>
 
@@ -171,5 +172,8 @@ Remove: 파일, 폴더 삭제
 |02.09|[Week33](https://github.com/KeepDoingSomething/Algorithm-Study/issues/200)|
 |02.16|[Week34](https://github.com/KeepDoingSomething/Algorithm-Study/issues/207)|
 |02.23|[Week35](https://github.com/KeepDoingSomething/Algorithm-Study/issues/211)|
+|03.09|[Week36](https://github.com/KeepDoingSomething/Algorithm-Study/issues/219)|
+|03.16|[Week37](https://github.com/KeepDoingSomething/Algorithm-Study/issues/224)|
+|03.23|[Week38](https://github.com/KeepDoingSomething/Algorithm-Study/issues/230)|
 
 </details>
