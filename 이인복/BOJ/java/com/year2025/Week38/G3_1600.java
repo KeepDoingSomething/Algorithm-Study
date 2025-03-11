@@ -1,3 +1,11 @@
+/**
+ * Author    : Lee In Bok
+ * Date      : 2025.03.09(Sun)
+ * Runtime   : 480 ms
+ * Memory    : 91236 KB
+ * Algorithm : BFS
+ */
+
 package com.year2025.Week38;
 
 import java.io.BufferedReader;
@@ -53,6 +61,7 @@ public class G3_1600 {
                 return;
             }
 
+            // 기본 이동 상, 하, 좌, 우
             for(int i = 0; i < 4; i++) {
                 int nextX = cur.x + dx[i];
                 int nextY = cur.y + dy[i];
@@ -63,7 +72,9 @@ public class G3_1600 {
                 }
             }
 
+            // 아직 점프가 가능한 케이스
             if(cur.jump < K) {
+                // 나이트 이동 케이스 8개
                 for(int i = 0; i < 8; i++) {
                     int nextX = cur.x + horseX[i];
                     int nextY = cur.y + horseY[i];
