@@ -61,7 +61,8 @@ class Main {
 
         Queue<State> q = new LinkedList<>();
 
-        Consumer appendNextToQ = (curr, dr, dc, jumps) -> {
+        // 다음 위치 queue 에 붙여주기
+        Appender appendNextToQ = (curr, dr, dc, jumps) -> {
             for (int i = 0; i < dr.length; i++) {
                 int r = curr.r + dr[i];
                 int c = curr.c + dc[i];
@@ -76,7 +77,7 @@ class Main {
         return bfs(q, appendNextToQ);
     }
 
-    private static int bfs(Queue<State> q, Consumer tasker)  {
+    private static int bfs(Queue<State> q, Appender appender)  {
         visit[0][0][K] = true;
         q.add(new State(0, 0, 0, K));
 
@@ -89,10 +90,12 @@ class Main {
                 return curr.steps;
             }
 
-            tasker.doTask(curr, drM, dcM, jumps);
+            // 원숭이 진행
+            appender.doTask(curr, drM, dcM, jumps);
 
+            // 말 진행
             if (jumps > 0)  {
-                tasker.doTask(curr, drH, dcH, jumps - 1);
+                appender.doTask(curr, drH, dcH, jumps - 1);
             }
         }
 
@@ -113,6 +116,7 @@ class State {
     }
 }
 
-interface Consumer {
+@FunctionalInterface
+interface Appender {
     void doTask(State curr, int[] dr, int[] dc, int jumps);
 }
