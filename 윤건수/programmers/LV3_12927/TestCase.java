@@ -25,9 +25,9 @@ public class TestCase {
     public HashMap<String, Object> getResult(){
         HashMap<String, Object> resultCase = new HashMap<>();
 
-        resultCase.put("case1", 12);
-        resultCase.put("case2", 6);
-        resultCase.put("case3", 0);
+        resultCase.put("case1", 12L);
+        resultCase.put("case2", 6L);
+        resultCase.put("case3", 0L);
 
         return resultCase;
     }
