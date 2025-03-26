@@ -17,6 +17,13 @@ class Solution {
     public long solution(int n, int[] works) {
         long answer = 0;
         
+        int sum_works = 0;
+        int max_works = 0;
+        for (int w : works) {
+            sum_works += w;
+            max_works = Math.max(max_works, w);
+        }
+        
         // 1. 파라매트릭 서치로, 작업했을 때 works 배열의 최대 잔여량을 구합니다.
         int start = 0;
         int end = max_works;
