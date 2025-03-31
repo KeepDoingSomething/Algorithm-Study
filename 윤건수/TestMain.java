@@ -9,20 +9,54 @@ public class TestMain {
         Leetcode leetcode = new Leetcode();
 
         /*
+         * 스터디 40주차
+         * */
+
+        // 당구 연습 (Level 2)
+        // https://school.programmers.co.kr/learn/courses/30/lessons/169198
+        programmers.setAnswer(new programmers.LV2_169198.Solution()).test();
+
+        //  트리 순회 (Gold 4)
+        // https://www.acmicpc.net/problem/22856
+        baekJoon.setAnswer(new baekjoon.G4_22856.Main()).test();
+
+        // 가장 큰 증가하는 부분 수열 (Silver 2)
+        // https://www.acmicpc.net/problem/11055
+        baekJoon.setAnswer(new baekjoon.S2_11055.Main()).test();
+
+
+        /*
+         * 스터디 39주차
+         * */
+
+        // 전구 (Gold 2)
+        // https://www.acmicpc.net/problem/2550
+        // baekJoon.setAnswer(new baekjoon.G2_2550.Main()).test();
+
+        // 야근 지수 (Level 3)
+        // https://school.programmers.co.kr/learn/courses/30/lessons/12927
+        // programmers.setAnswer(new programmers.LV3_12927.Solution()).test();
+
+        // 가장 긴 증가하는 부분 수열 2 (Gold 2)
+        // https://www.acmicpc.net/problem/12015
+        // baekJoon.setAnswer(new baekjoon.G2_12015.Main()).test();
+
+
+        /*
          * 스터디 38주차
          * */
 
         // 말이 되고픈 원숭이 (Gold 3)
         // https://www.acmicpc.net/problem/1600
-        baekJoon.setAnswer(new baekjoon.G3_1600.Main()).test();
+        // baekJoon.setAnswer(new baekjoon.G3_1600.Main()).test();
 
         // 앱 (Gold 3)
         // https://www.acmicpc.net/problem/7579
-        baekJoon.setAnswer(new baekjoon.G3_7579.Main()).test();
+        // baekJoon.setAnswer(new baekjoon.G3_7579.Main()).test();
 
         // 배달 (Level 2)
         // https://school.programmers.co.kr/learn/courses/30/lessons/12978
-        programmers.setAnswer(new programmers.LV2_12987.Solution()).test();
+        // programmers.setAnswer(new programmers.LV2_12987.Solution()).test();
 
 
         /*
@@ -125,8 +159,8 @@ public class TestMain {
         // 멀티탭 스케쥴링 (Gold 1)
         // https://www.acmicpc.net/problem/1700
         // baekJoon.setAnswer(new baekjoon.G1_1700.Main()).test();
-        
-        
+
+
         /*
          * 스터디 31주차
          * */
